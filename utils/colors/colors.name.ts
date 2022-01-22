@@ -211,6 +211,9 @@ const colorsName = {
 		hex: "#151B54",
 		rgb: "rgb(21,27,84)",
 	},
+	DarkBlue: {
+		hex: "#10203F",
+	},
 	MidnightBlue: {
 		hex: "#191970",
 		rgb: "rgb(25,25,112)",
@@ -2310,7 +2313,7 @@ const colorsName = {
 		hex: "#FFFFFF",
 		rgb: "rgb(255,255,255)",
 	},
-	rgba: function (name: String, value: String): String {
+	rgba(name: String, value: String): String {
 		// @ts-ignore
 		return this.name.rgb.replace(")", `,${value})`);
 	},
