@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeProvider } from "styled-components";
+import Header from "../components/header";
 import { HomeGridContainer } from "../components/styledComponents/views";
-import UseThemeProviderComponent from "../hooks/theme";
+import { ThemeContext } from "../hooks/theme";
 
 // eslint-disable-next-line no-undef
-const Home: React.FC = (): JSX.Element => (
-	<UseThemeProviderComponent>
-		<HomeGridContainer>
-			<h1>Hello</h1>
-		</HomeGridContainer>
-	</UseThemeProviderComponent>
-);
+const Home: React.FC = (): JSX.Element => {
+	const { theme } = useContext(ThemeContext);
+	return (
+		<ThemeProvider theme={theme}>
+			<HomeGridContainer>
+				<Header />
+			</HomeGridContainer>
+		</ThemeProvider>
+	);
+};
 
 export default Home;
