@@ -2313,6 +2313,11 @@ const colorsName = {
 		hex: "#FFFFFF",
 		rgb: "rgb(255,255,255)",
 	},
+	WhiteG: {
+		hex: "rgb(200, 200, 217)",
+		gradient:
+			"linear-gradient(90deg,rgba(200, 200, 217, 1) 0%,rgba(255, 255, 255, 1) 16%)",
+	},
 	rgba(name: String, value: String): String {
 		// @ts-ignore
 		return this.name.rgb.replace(")", `,${value})`);
