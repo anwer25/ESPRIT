@@ -211,7 +211,7 @@ const colorsName = {
 		hex: "#151B54",
 		rgb: "rgb(21,27,84)",
 	},
-	DarkBlue: {
+	DarkBlueHex: {
 		hex: "#10203F",
 	},
 	MidnightBlue: {
