@@ -1,6 +1,11 @@
-const searchSender = async (input: String): Promise<any> => {
-	const data = await fetch(input);
-	return data;
-};
+// TODO : add apollo search Qery Here
+// TODO: add constructor
 
-export { searchSender };
+class Fetcher {
+	static searchSender = (input: String): String => {
+		console.log(input);
+		return input;
+	};
+}
+
+export default Fetcher;

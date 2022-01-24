@@ -1,13 +1,6 @@
 // eslint-disable-next-line import/extensions
 import colorsName from "../colors/colors.name";
 
-const [
-	defaultCircleBorderColor,
-	defaultCompanyNameColor,
-	defaultCompanyBarColor,
-	defaultCompanyNameArrowColor,
-] = Array(4).fill(colorsName.White.hex); // for white color #fff if you add another variable don't forget to add array length
-
 const companyNameText = "ESPRIT";
 
 const [
@@ -18,7 +11,8 @@ const [
 	defaultSearchInputBackground,
 	defaultSearchInputBorderColor,
 	defaultSearchButtonBorderColor,
-] = Array(7).fill(colorsName.White.hex); // for white color #fff if you add another variable don't forget to add array length
+	defaultNavLinkSVGColor,
+] = Array(8).fill(colorsName.White.hex); // for white color #fff if you add another variable don't forget to add array length
 
 const [
 	defaultNavContainerColor,
@@ -45,6 +39,7 @@ const defaultTheme = {
 	searchButtonBorderColor: defaultSearchButtonBorderColor,
 	searchSVGColor: defaultSearchSVGColor,
 	searchInputBorderColorHover: defaultSearchInputBorderColorHover,
+	navLinkSVGColor: defaultNavLinkSVGColor,
 };
 
 // eslint-disable-next-line import/prefer-default-export

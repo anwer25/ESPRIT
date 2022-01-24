@@ -3,6 +3,11 @@ import { useRouter } from "next/router";
 import GlobalContainer from "../../../components/globalContainer";
 import Header from "../../../components/header";
 import UseThemeProviderComponent from "../../../hooks/theme";
+// import Fetcher from "../../../lib/sender";
+
+// export async function getServerSideProps() {
+// 	const Querying = Fetcher.searchSender();
+// }
 
 const Search: React.FC = (): JSX.Element => {
 	const router = useRouter();
