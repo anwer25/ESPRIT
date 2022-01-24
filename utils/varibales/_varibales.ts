@@ -1,6 +1,13 @@
 // eslint-disable-next-line import/extensions
 import colorsName from "../colors/colors.name";
 
+const [
+	defaultCircleBorderColor,
+	defaultCompanyNameColor,
+	defaultCompanyBarColor,
+	defaultCompanyNameArrowColor,
+] = Array(4).fill(colorsName.White.hex); // for white color #fff if you add another variable don't forget to add array length
+
 const companyNameText = "ESPRIT";
 
 const [
