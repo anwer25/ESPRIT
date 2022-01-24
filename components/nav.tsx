@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeContainer, Nav } from "./styledComponents/views";
+import { HomeContainer, Nav, LogoBar } from "./styledComponents/views";
 import { CompanyName, CompanyNameBar } from "./styledComponents/text";
 import { companyNameText } from "../utils/varibales/_varibales";
 
@@ -9,7 +9,9 @@ const NavComponent: React.FC = (): JSX.Element => {
 		<HomeContainer>
 			<Nav>
 				<CompanyName>
-					<CompanyNameBar>------</CompanyNameBar>
+					<CompanyNameBar>
+						<LogoBar />
+					</CompanyNameBar>
 					{companyNameText}
 				</CompanyName>
 			</Nav>
