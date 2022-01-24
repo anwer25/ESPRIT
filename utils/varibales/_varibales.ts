@@ -1,17 +1,29 @@
 // eslint-disable-next-line import/extensions
 import colorsName from "../colors/colors.name";
 
+const companyNameText = "ESPRIT";
+
 const [
 	defaultCircleBorderColor,
 	defaultCompanyNameColor,
 	defaultCompanyBarColor,
 	defaultCompanyNameArrowColor,
-] = Array(4).fill(colorsName.White.hex); // for white color #fff if you add another variable don't forget to add array length
+	defaultSearchInputBackground,
+	defaultSearchInputBorderColor,
+	defaultSearchButtonBorderColor,
+] = Array(7).fill(colorsName.White.hex); // for white color #fff if you add another variable don't forget to add array length
 
-const companyNameText = "ESPRIT";
-const defaultNavContainerColor = colorsName.blueBg.hex;
+const [
+	defaultNavContainerColor,
+	defaultSearchSVGColor,
+	defaultSearchInputBorderColorHover,
+] = Array(3).fill(colorsName.blueBg.hex);
+
+const [defaultSecondCircleGradientColor] = Array(1).fill(
+	colorsName.WhiteG.gradient
+);
+
 const defaultSecondCircleBgColor = colorsName.WhiteG.hex;
-const defaultSecondCircleGradientColor = colorsName.WhiteG.gradient;
 
 const defaultTheme = {
 	navContainerColor: defaultNavContainerColor,
@@ -21,6 +33,11 @@ const defaultTheme = {
 	companyNameColor: defaultCompanyNameColor,
 	companyBarColor: defaultCompanyBarColor,
 	companyArrowColor: defaultCompanyNameArrowColor,
+	searchInputBackground: defaultSearchInputBackground,
+	searchInputBorderColor: defaultSearchInputBorderColor,
+	searchButtonBorderColor: defaultSearchButtonBorderColor,
+	searchSVGColor: defaultSearchSVGColor,
+	searchInputBorderColorHover: defaultSearchInputBorderColorHover,
 };
 
 // eslint-disable-next-line import/prefer-default-export
