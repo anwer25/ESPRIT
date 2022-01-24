@@ -1,20 +1,22 @@
 import React from "react";
 import {
 	NavContainer,
-	CercleContainer,
-	CercleOne,
-	CercleTow,
+	CircleContainer,
+	CircleOne,
+	CircleTow,
+	Circle,
 } from "./styledComponents/views";
 import NavComponent from "./nav";
 
 const Header: React.FC = (): JSX.Element => (
 	<NavContainer>
 		<NavComponent />
-		<CercleContainer>
-			<CercleOne>
-				<CercleTow />
-			</CercleOne>
-		</CercleContainer>
+		<CircleContainer>
+			<CircleOne>
+				<Circle />
+				<CircleTow />
+			</CircleOne>
+		</CircleContainer>
 	</NavContainer>
 );
 
