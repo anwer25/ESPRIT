@@ -12,9 +12,7 @@ const HomeContainer = styled.div`
 	margin: 0 18.75rem;
 `;
 
-const HomeHeader = styled.header``;
-
-const NavContainer = styled.div`
+const NavContainer = styled.header`
 	background-color: ${(props) => props.theme.navContainerColor};
 `;
 
@@ -117,9 +115,17 @@ const SearchSVG = styled.svg`
 	fill: ${(props) => props.theme.searchSVGColor};
 `;
 
+const NavLinkButton = styled.button`
+	background-color: transparent;
+	border: none;
+`;
+
+const NavLinkSVG = styled.svg`
+	fill: ${(props) => props.theme.navLinkSVGColor};
+`;
+
 export {
 	HomeGridContainer,
-	HomeHeader,
 	HomeContainer,
 	NavContainer,
 	CircleContainer,
@@ -132,4 +138,6 @@ export {
 	SearchInput,
 	SearchButton,
 	SearchSVG,
+	NavLinkButton,
+	NavLinkSVG,
 };
