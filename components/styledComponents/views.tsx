@@ -87,6 +87,36 @@ const Nav = styled.nav`
 	padding-top: 1rem;
 `;
 
+const SearchForm = styled.div`
+	display: flex;
+	flex-flow: row nowrap;
+`;
+
+const SearchInput = styled.input`
+	border: 1px solid ${(props) => props.theme.searchInputBorderColor};
+	border-radius: 1.25rem;
+	padding: 0.557rem;
+	background-color: ${(props) => props.theme.searchInputBackground};
+	&:focus {
+		outline-color: ${(props) => props.theme.searchInputBorderColorHover};
+	}
+`;
+
+const SearchButton = styled.span`
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	right: 1.813rem;
+`;
+
+const SearchSVG = styled.svg`
+	height: 15px;
+	width: 15px;
+	fill: ${(props) => props.theme.searchSVGColor};
+`;
+
 export {
 	HomeGridContainer,
 	HomeHeader,
@@ -98,4 +128,8 @@ export {
 	Circle,
 	Nav,
 	LogoBar,
+	SearchForm,
+	SearchInput,
+	SearchButton,
+	SearchSVG,
 };
