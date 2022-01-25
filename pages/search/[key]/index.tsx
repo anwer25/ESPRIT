@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import GlobalContainer from "../../../components/globalContainer";
-import Header from "../../../components/header";
+import Header from "../../../components/header/header";
 import UseThemeProviderComponent from "../../../hooks/theme";
 // import Fetcher from "../../../lib/sender";
 

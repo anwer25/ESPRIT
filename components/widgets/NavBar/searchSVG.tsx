@@ -1,5 +1,5 @@
 import React from "react";
-import { SearchSVG } from "../styledComponents/views";
+import { SearchSVG } from "../../styledComponents/views";
 
 const SVG: React.FC = (): JSX.Element => (
 	<SearchSVG

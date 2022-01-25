@@ -2318,6 +2318,9 @@ const colorsName = {
 		gradient:
 			"linear-gradient(90deg,rgba(200, 200, 217, 1) 0%,rgba(255, 255, 255, 1) 16%)",
 	},
+	defaultBlue: {
+		hex: "#2257BF",
+	},
 	rgba(name: String, value: String): String {
 		// @ts-ignore
 		return this.name.rgb.replace(")", `,${value})`);

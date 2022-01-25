@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { motion } from "framer-motion";
 
 const HomeGridContainer = styled.div`
 	display: grid;
@@ -9,7 +10,7 @@ const HomeGridContainer = styled.div`
 `;
 
 const HomeContainer = styled.div`
-	margin: 0 18.75rem;
+	margin: 0 11.75rem;
 `;
 
 const NavContainer = styled.header`
@@ -114,14 +115,111 @@ const SearchSVG = styled.svg`
 	width: 15px;
 	fill: ${(props) => props.theme.searchSVGColor};
 `;
-
-const NavLinkButton = styled.button`
-	background-color: transparent;
-	border: none;
+const NavLinkContainer = styled(motion.div)`
+	position: absolute;
+	top: 0;
+	left: 78%;
+	bottom: 0;
+	width: 300px;
 `;
 
-const NavLinkSVG = styled.svg`
-	fill: ${(props) => props.theme.navLinkSVGColor};
+const NavLinkButton = styled.button`
+	outline: none;
+	border: none;
+	position: absolute;
+	top: 1.813rem;
+	left: 1.438rem;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	cursor: pointer;
+	border-radius: 50%;
+	background: transparent;
+`;
+const SideBar = styled(motion.div)`
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 300px;
+	background: #fff;
+`;
+
+const NavUl = styled(motion.ul)`
+	padding: 25px;
+	position: absolute;
+	top: 4.375rem;
+	width: 230px;
+	margin: 0;
+`;
+
+const NavLi = styled(motion.li)`
+	margin: 0 0 20px 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+`;
+
+const NavIcon = styled.div`
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	flex: 40px 0;
+	margin-right: 20px;
+`;
+
+const NavLink = styled.div`
+	border-radius: 5px;
+	width: 200px;
+	height: 20px;
+	flex: 1;
+`;
+
+const HeroContainer = styled.div`
+	display: flex;
+	flex-flow: column;
+`;
+
+const SocialMediaContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+`;
+
+const InstaContainer = styled.div`
+	margin-right: 1rem;
+`;
+const FacebookContainer = styled.div`
+	margin-right: 1rem;
+`;
+const TwitterContainer = styled.div`
+	margin-right: 3rem;
+`;
+
+const InstaSVG = styled.svg``;
+const FacebookSVG = styled.svg``;
+const TwitterSVG = styled.svg``;
+
+const InstaPath = styled.path`
+	fill: ${(props) => props.theme.instaColor};
+	fill-opacity: ${(props) => props.theme.instaOpacity};
+`;
+
+const FacebookPath = styled.path`
+	fill: ${(props) => props.theme.facebookColor};
+	fill-opacity: ${(props) => props.theme.facebookOpacity};
+`;
+
+const TwitterPath = styled.path`
+	fill: ${(props) => props.theme.twitterColor};
+	fill-opacity: ${(props) => props.theme.twitterOpacity};
+`;
+
+const ImageGalary = styled(motion.img)`
+	position: absolute;
+	max-width: 100vw;
 `;
 
 export {
@@ -138,6 +236,23 @@ export {
 	SearchInput,
 	SearchButton,
 	SearchSVG,
+	NavLinkContainer,
 	NavLinkButton,
-	NavLinkSVG,
+	SideBar,
+	NavUl,
+	NavLi,
+	NavIcon,
+	NavLink,
+	HeroContainer,
+	SocialMediaContainer,
+	InstaContainer,
+	InstaSVG,
+	InstaPath,
+	FacebookContainer,
+	FacebookSVG,
+	FacebookPath,
+	TwitterContainer,
+	TwitterSVG,
+	TwitterPath,
+	ImageGalary,
 };
