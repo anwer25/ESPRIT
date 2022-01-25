@@ -15,14 +15,20 @@ const HomeContainer = styled.div`
 
 const NavContainer = styled.header`
 	background-color: ${(props) => props.theme.navContainerColor};
+	height: 25rem;
 `;
 
-const CircleContainer = styled.div``;
+const CircleContainer = styled.div`
+	position: relative;
+	top: 1.125rem;
+	left: 10rem;
+	display: inline-block;
+`;
 
 const CircleOne = styled.div`
 	border: 1px solid ${(props) => props.theme.cerecleBorder};
-	width: 18.75rem;
-	height: 18.75rem;
+	width: 15.75rem;
+	height: 15.75rem;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -31,8 +37,8 @@ const CircleOne = styled.div`
 
 const CircleTow = styled.div`
 	border: 1px solid ${(props) => props.theme.cerecleBorder};
-	width: 9.375rem;
-	height: 9.375rem;
+	width: 7.375rem;
+	height: 7.375rem;
 	border-radius: 50%;
 	background: ${(props) => props.theme.CircleBackground};
 	background: ${(props) => props.theme.CircleGradient};
@@ -42,13 +48,13 @@ const CircleTow = styled.div`
 const circle = keyframes`
 	0%{
 	    transform:rotate(0deg)
-	              translate(-165px)
+	              translate(-126px)
 	              rotate(0deg);
 	  
 	  }
 	  100%{
 	    transform:rotate(360deg)
-	              translate(-165px)
+	              translate(-126px)
 	              rotate(-360deg);
 	  }
 
@@ -120,6 +126,7 @@ const NavLinkContainer = styled(motion.div)`
 	top: 0;
 	left: 78%;
 	bottom: 0;
+	height: 25rem;
 	width: 300px;
 `;
 
@@ -128,7 +135,7 @@ const NavLinkButton = styled.button`
 	border: none;
 	position: absolute;
 	top: 1.813rem;
-	left: 1.438rem;
+	left: 2.438rem;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -139,7 +146,7 @@ const NavLinkButton = styled.button`
 const SideBar = styled(motion.div)`
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 1.063rem;
 	bottom: 0;
 	width: 300px;
 	background: #fff;
@@ -158,6 +165,7 @@ const NavLi = styled(motion.li)`
 	padding: 0;
 	list-style: none;
 	display: flex;
+	visibility: hidden;
 	align-items: center;
 	cursor: pointer;
 `;
@@ -177,9 +185,17 @@ const NavLink = styled.div`
 	flex: 1;
 `;
 
+const GalleryHomeContainer = styled.div`
+	margin: 0 11.75rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+`;
 const HeroContainer = styled.div`
 	display: flex;
 	flex-flow: column;
+	justify-content: center;
+	position: absolute;
 `;
 
 const SocialMediaContainer = styled.div`
@@ -194,9 +210,7 @@ const InstaContainer = styled.div`
 const FacebookContainer = styled.div`
 	margin-right: 1rem;
 `;
-const TwitterContainer = styled.div`
-	margin-right: 3rem;
-`;
+const TwitterContainer = styled.div``;
 
 const InstaSVG = styled.svg``;
 const FacebookSVG = styled.svg``;
@@ -217,9 +231,47 @@ const TwitterPath = styled.path`
 	fill-opacity: ${(props) => props.theme.twitterOpacity};
 `;
 
-const ImageGalary = styled(motion.img)`
+const GalleryContainer = styled.div``;
+
+const ImageGallery = styled(motion.img)`
+	max-height: 41rem;
+	max-width: 49rem;
+`;
+
+const Next = styled.div`
+	top: calc(50% - 20px);
 	position: absolute;
-	max-width: 100vw;
+	background: white;
+	border-radius: 30px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+	z-index: 2;
+	right: 10px;
+`;
+
+const Prev = styled.div`
+	top: calc(50% - 20px);
+	position: absolute;
+	background: white;
+	border-radius: 30px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+	z-index: 2;
+	left: 10px;
 `;
 
 export {
@@ -243,6 +295,7 @@ export {
 	NavLi,
 	NavIcon,
 	NavLink,
+	GalleryHomeContainer,
 	HeroContainer,
 	SocialMediaContainer,
 	InstaContainer,
@@ -254,5 +307,8 @@ export {
 	TwitterContainer,
 	TwitterSVG,
 	TwitterPath,
-	ImageGalary,
+	GalleryContainer,
+	ImageGallery,
+	Next,
+	Prev,
 };

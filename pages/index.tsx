@@ -4,6 +4,7 @@ import React from "react";
 import Header from "../components/header/header";
 import GlobalContainer from "../components/globalContainer";
 import UseThemeProviderComponent from "../hooks/theme";
+import Main from "../components/main/main";
 
 const Index: NextPage = () => (
 	<div>
@@ -14,6 +15,7 @@ const Index: NextPage = () => (
 		<UseThemeProviderComponent>
 			<GlobalContainer>
 				<Header />
+				<Main />
 			</GlobalContainer>
 		</UseThemeProviderComponent>
 	</div>

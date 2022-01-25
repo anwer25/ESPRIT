@@ -1,8 +1,15 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
 import { images } from "../../../lib/image-data";
-import { ImageGalary } from "../../styledComponents/views";
+import {
+	GalleryContainer,
+	ImageGallery,
+	Next,
+	Prev,
+} from "../../styledComponents/views";
+
+// TODO: FIX Gallery
 
 const variants = {
 	enter: (direction: number) => ({
@@ -25,16 +32,16 @@ const swipeConfidenceThreshold = 10000;
 const swipePower = (offset: number, velocity: number) =>
 	Math.abs(offset) * velocity;
 
-const Galary: React.FC = (): JSX.Element => {
+const Gallery: React.FC = (): JSX.Element => {
 	const [[page, direction], setPage] = useState([0, 0]);
 	const imageIndex = wrap(0, images.length, page);
 	const paginate = (newDirection: number) => {
 		setPage([page + newDirection, newDirection]);
 	};
 	return (
-		<>
+		<GalleryContainer>
 			<AnimatePresence initial={false} custom={direction}>
-				<ImageGalary
+				<ImageGallery
 					key={page}
 					src={images[imageIndex]}
 					custom={direction}
@@ -60,14 +67,10 @@ const Galary: React.FC = (): JSX.Element => {
 					}}
 				/>
 			</AnimatePresence>
-			<div className="next" onClick={() => paginate(1)}>
-				‣
-			</div>
-			<div className="prev" onClick={() => paginate(-1)}>
-				‣
-			</div>
-		</>
+			<Next onClick={() => paginate(1)}>‣</Next>
+			<Prev onClick={() => paginate(-1)}>◂</Prev>
+		</GalleryContainer>
 	);
 };
 
-export default Galary;
+export default Gallery;

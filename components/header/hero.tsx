@@ -1,15 +1,15 @@
 import React from "react";
 import Social from "../widgets/hero/social";
-import { HomeContainer, HeroContainer } from "../styledComponents/views";
-import Galary from "../widgets/hero/galary";
+import { HeroContainer, GalleryHomeContainer } from "../styledComponents/views";
+import Gallery from "../widgets/hero/gallery";
 
 const Hero: React.FC = (): JSX.Element => (
-	<HomeContainer>
+	<GalleryHomeContainer>
 		<HeroContainer>
 			<Social />
-			<Galary />
+			<Gallery />
 		</HeroContainer>
-	</HomeContainer>
+	</GalleryHomeContainer>
 );
 
 export default Hero;

@@ -17,7 +17,6 @@ const NavComponent: React.FC = (): JSX.Element => (
 			<SearchBar />
 			<div>.</div>
 		</Nav>
-		<NavLink />
 	</HomeContainer>
 );
 

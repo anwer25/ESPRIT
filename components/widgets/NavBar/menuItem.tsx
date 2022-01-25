@@ -5,6 +5,7 @@ import { colors } from "../../../utils/varibales/_varibales";
 const variants = {
 	open: {
 		y: 0,
+		visibility: "visible",
 		opacity: 1,
 		transition: {
 			y: { stiffness: 1000, velocity: -100 },
@@ -13,6 +14,7 @@ const variants = {
 	closed: {
 		y: 50,
 		opacity: 0,
+		visibility: "hidden",
 		transition: {
 			y: { stiffness: 1000 },
 		},
