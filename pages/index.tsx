@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
-import Header from "../components/header";
+import Header from "../components/header/header";
 import GlobalContainer from "../components/globalContainer";
 import UseThemeProviderComponent from "../hooks/theme";
 

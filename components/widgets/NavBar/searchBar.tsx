@@ -4,7 +4,7 @@ import {
 	SearchForm,
 	SearchInput,
 	SearchButton,
-} from "../styledComponents/views";
+} from "../../styledComponents/views";
 import SVG from "./searchSVG";
 
 const SearchBar: React.FC = (): JSX.Element => {

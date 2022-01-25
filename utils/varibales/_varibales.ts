@@ -2,6 +2,11 @@
 import colorsName from "../colors/colors.name";
 
 const companyNameText = "ESPRIT";
+const links = {
+	instagrame: "https://www.instagram.com",
+	facebook: "https://www.facebook.com",
+	twitter: "https://twitter.com/",
+};
 
 const [
 	defaultCircleBorderColor,
@@ -24,7 +29,15 @@ const [defaultSecondCircleGradientColor] = Array(1).fill(
 	colorsName.WhiteG.gradient
 );
 
+const [defaultInstaColor, defaultfacebookColor, defaultTwitterColor] = Array(
+	3
+).fill(colorsName.DarkPurple.hex);
+
+const [defaultInstaOpacity, defaultFacebookOpacity, defaultTwitterOpacity] =
+	Array(3).fill("1");
+
 const defaultSecondCircleBgColor = colorsName.WhiteG.hex;
+const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
 const defaultTheme = {
 	navContainerColor: defaultNavContainerColor,
@@ -40,7 +53,13 @@ const defaultTheme = {
 	searchSVGColor: defaultSearchSVGColor,
 	searchInputBorderColorHover: defaultSearchInputBorderColorHover,
 	navLinkSVGColor: defaultNavLinkSVGColor,
+	instaColor: defaultInstaColor,
+	facebookColor: defaultfacebookColor,
+	twitterColor: defaultTwitterColor,
+	instaOpacity: defaultInstaOpacity,
+	facebookOpacity: defaultFacebookOpacity,
+	twitterOpacity: defaultTwitterOpacity,
 };
 
 // eslint-disable-next-line import/prefer-default-export
-export { companyNameText, defaultTheme };
+export { companyNameText, defaultTheme, colors, links };

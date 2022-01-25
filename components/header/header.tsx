@@ -5,7 +5,8 @@ import {
 	CircleOne,
 	CircleTow,
 	Circle,
-} from "./styledComponents/views";
+} from "../styledComponents/views";
+import Hero from "./hero";
 import NavComponent from "./nav";
 
 const Header: React.FC = (): JSX.Element => (
@@ -17,6 +18,7 @@ const Header: React.FC = (): JSX.Element => (
 				<CircleTow />
 			</CircleOne>
 		</CircleContainer>
+		<Hero />
 	</NavContainer>
 );
 
