@@ -60,7 +60,6 @@ const circle = keyframes`
 
 `;
 
-// TODO : fix Circle position
 // TODO: add Circle Theme color
 
 const Circle = styled.div`
@@ -274,6 +273,18 @@ const Prev = styled.div`
 	left: 10px;
 `;
 
+const MainContainer = styled.main`
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(7, 1fr);
+	grid-column-gap: 0;
+	grid-row-gap: 0;
+`;
+
+const CoursesSection = styled.section`
+	margin-top: 2rem;
+`;
+
 export {
 	HomeGridContainer,
 	HomeContainer,
@@ -311,4 +322,6 @@ export {
 	ImageGallery,
 	Next,
 	Prev,
+	MainContainer,
+	CoursesSection,
 };
