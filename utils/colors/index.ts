@@ -211,7 +211,7 @@ const colorsName = {
 		hex: "#151B54",
 		rgb: "rgb(21,27,84)",
 	},
-	DarkBlue: {
+	DarkBlueHex: {
 		hex: "#10203F",
 	},
 	MidnightBlue: {
@@ -2312,6 +2312,14 @@ const colorsName = {
 	White: {
 		hex: "#FFFFFF",
 		rgb: "rgb(255,255,255)",
+	},
+	WhiteG: {
+		hex: "rgb(200, 200, 217)",
+		gradient:
+			"linear-gradient(90deg,rgba(200, 200, 217, 1) 0%,rgba(255, 255, 255, 1) 16%)",
+	},
+	defaultBlue: {
+		hex: "#2257BF",
 	},
 	rgba(name: String, value: String): String {
 		// @ts-ignore
