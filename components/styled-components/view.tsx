@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 const Container = styled.div`
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: auto;
 	grid-column-gap: 0;
 	grid-row-gap: 0;
 `;
@@ -13,8 +13,13 @@ const HeaderContainer = styled.header`
 	background-color: ${(props) => props.theme.navContainerColor};
 `;
 const MainContainer = styled.main`
-	background-color: red;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-column-gap: 0;
+	grid-row-gap: 0;
 `;
+
 const FooterContainer = styled.footer`
 	background-color: blue;
 `;
@@ -143,7 +148,6 @@ const CircleTow = styled.div`
 	height: 7.375rem;
 	border-radius: 50%;
 	background: ${(props) => props.theme.CircleBackground};
-	background: ${(props) => props.theme.CircleGradient};
 `;
 const circle = keyframes`
   0%{
@@ -261,6 +265,50 @@ const Prev = styled.div`
 	left: 10px;
 `;
 
+const CoursesContainer = styled.section`
+	margin-top: 18rem;
+	display: flex;
+	flex-flow: column;
+`;
+const CoursesTitleContainer = styled.div`
+	background-color: red;
+`;
+const CoursesSlideContainer = styled.div`
+	background: aqua;
+	height: 34rem;
+	width: 100%;
+`;
+
+const SliderComponentContainer = styled.div`
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	width: 100%;
+`;
+
+const SliderWidgetContainer = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	height: 100%;
+	width: 100%;
+	background-color: blueviolet;
+`;
+const SliderNumberUlContainer = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	flex-flow: row nowrap;
+	background-color: cornflowerblue;
+`;
+
+const SliderUl = styled(motion.ul)`
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+`;
+
 export {
 	Container,
 	HeaderContainer,
@@ -300,4 +348,11 @@ export {
 	ImageGallery,
 	Next,
 	Prev,
+	CoursesContainer,
+	CoursesTitleContainer,
+	CoursesSlideContainer,
+	SliderWidgetContainer,
+	SliderNumberUlContainer,
+	SliderUl,
+	SliderComponentContainer,
 };

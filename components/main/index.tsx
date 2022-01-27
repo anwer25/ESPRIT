@@ -1,9 +1,12 @@
 import React from "react";
-import { MainContainer } from "../styled-components/view";
+import { MainContainer, MarginContainer } from "../styled-components/view";
+import Courses from "./courses/courses";
 
 const Main: React.FC = (): JSX.Element => (
 	<MainContainer>
-		<h1 />
+		<MarginContainer>
+			<Courses />
+		</MarginContainer>
 	</MainContainer>
 );
 

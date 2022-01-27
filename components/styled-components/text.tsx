@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
+import { fonts } from "../../utils/varibales";
 
 const CompanyNameBar = styled.span`
 	margin-left: 1.5rem;
@@ -8,9 +10,9 @@ const CompanyNameBar = styled.span`
 `;
 
 const CompanyName = styled.h1`
-	@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&display=swap");
+	@import url(${fonts.companyName.Lora.url});
 	margin: 0 0 0 0;
-	font-family: Lora serif;
+	font-family: ${fonts.companyName.Lora.fontFamily};
 	font-weight: 500;
 	color: ${(props) => props.theme.companyNameColor};
 	&::after {
@@ -24,4 +26,12 @@ const CompanyName = styled.h1`
 	}
 `;
 
-export { CompanyName, CompanyNameBar };
+const CoursesTitle = styled.h3`
+	@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@1,600&display=swap");
+	font-family: "Source Serif 4", sans-serif;
+	color: ${(props) => props.theme.coursesTitleColor};
+	font-weight: bold;
+	font-size: 3rem;
+`;
+
+export { CompanyName, CompanyNameBar, CoursesTitle };

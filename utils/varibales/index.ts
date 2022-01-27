@@ -2,10 +2,26 @@
 import colorsName from "../colors";
 
 const companyNameText = "ESPRIT";
+const CoursesTitleText = "Meilleurs cours";
 const links = {
 	instagrame: "https://www.instagram.com",
 	facebook: "https://www.facebook.com",
 	twitter: "https://twitter.com/",
+};
+
+const fonts = {
+	companyName: {
+		Lora: {
+			url: `https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&display=swap`,
+			fontFamily: `Lora serif`,
+		},
+	},
+	coursesTitle: {
+		SourceSerif: {
+			url: `https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@1,600&display=swap`,
+			fontFamily: `Source Serif 4', sans-serif`,
+		},
+	},
 };
 
 const [
@@ -23,7 +39,8 @@ const [
 	defaultNavContainerColor,
 	defaultSearchSVGColor,
 	defaultSearchInputBorderColorHover,
-] = Array(3).fill(colorsName.blueBg.hex);
+	defaultCoursesTitleColor,
+] = Array(4).fill(colorsName.blueBg.hex);
 
 const [defaultSecondCircleGradientColor] = Array(1).fill(
 	colorsName.WhiteG.gradient
@@ -59,7 +76,15 @@ const defaultTheme = {
 	instaOpacity: defaultInstaOpacity,
 	facebookOpacity: defaultFacebookOpacity,
 	twitterOpacity: defaultTwitterOpacity,
+	coursesTitleColor: defaultCoursesTitleColor,
 };
 
 // eslint-disable-next-line import/prefer-default-export
-export { companyNameText, defaultTheme, colors, links };
+export {
+	companyNameText,
+	defaultTheme,
+	colors,
+	links,
+	CoursesTitleText,
+	fonts,
+};
