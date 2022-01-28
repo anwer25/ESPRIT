@@ -32,6 +32,9 @@ const CoursesTitle = styled.h3`
 	color: ${(props) => props.theme.coursesTitleColor};
 	font-weight: bold;
 	font-size: 3rem;
+	margin: 0;
+	padding: 0;
+	width: 50%;
 `;
 
 export { CompanyName, CompanyNameBar, CoursesTitle };

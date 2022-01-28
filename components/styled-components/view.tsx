@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import styled, { keyframes } from "styled-components";
+import Image from "next/image";
 
 const Container = styled.div`
 	display: grid;
@@ -227,6 +228,8 @@ const GalleryContainer = styled.div``;
 const ImageGallery = styled(motion.img)`
 	max-height: 36rem;
 	max-width: 42rem;
+	display: none;
+	overflow: hidden;
 `;
 
 const Next = styled.div`
@@ -270,44 +273,30 @@ const CoursesContainer = styled.section`
 	display: flex;
 	flex-flow: column;
 `;
-const CoursesTitleContainer = styled.div`
-	background-color: red;
-`;
-const CoursesSlideContainer = styled.div`
-	background: aqua;
+const CoursesGridContainer = styled.div`
+	display: flex;
+	flex-flow: column;
+	border: 2px solid aqua;
 	height: 34rem;
 	width: 100%;
 `;
-
-const SliderComponentContainer = styled.div`
+const CoursesTitleContainer = styled.div`
 	display: flex;
-	flex-flow: column;
-	height: 100%;
-	width: 100%;
-`;
-
-const SliderWidgetContainer = styled.div`
-	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-	flex-flow: column;
-	height: 100%;
-	width: 100%;
-	background-color: blueviolet;
-`;
-const SliderNumberUlContainer = styled.div`
-	display: flex;
-	justify-content: flex-end;
 	flex-flow: row nowrap;
-	background-color: cornflowerblue;
 `;
 
-const SliderUl = styled(motion.ul)`
+const CoursesGridItemsContainer = styled.div`
 	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
+	flex-flow: row wrap;
+	height: 80%;
 `;
+
+const CoursesGridItemContainer = styled(motion.div)``;
+
+const CoursesGridCard = styled(Image)``;
+const CoursesGridTitle = styled.div``;
 
 export {
 	Container,
@@ -350,9 +339,9 @@ export {
 	Prev,
 	CoursesContainer,
 	CoursesTitleContainer,
-	CoursesSlideContainer,
-	SliderWidgetContainer,
-	SliderNumberUlContainer,
-	SliderUl,
-	SliderComponentContainer,
+	CoursesGridContainer,
+	CoursesGridItemsContainer,
+	CoursesGridItemContainer,
+	CoursesGridCard,
+	CoursesGridTitle,
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import {
 	CoursesContainer,
-	CoursesSlideContainer,
+	CoursesGridContainer,
 	CoursesTitleContainer,
 	// eslint-disable-next-line import/extensions
 } from "../../styled-components/view";
@@ -9,16 +9,16 @@ import {
 import { CoursesTitle } from "../../styled-components/text";
 // eslint-disable-next-line import/extensions
 import { CoursesTitleText } from "../../../utils/varibales";
-import Slider from "./slider";
+import GridItems from "./grid";
 // eslint-disable-next-line no-undef
 const Courses: React.FC = (): JSX.Element => (
 	<CoursesContainer>
-		<CoursesTitleContainer>
-			<CoursesTitle>{CoursesTitleText}</CoursesTitle>
-		</CoursesTitleContainer>
-		<CoursesSlideContainer>
-			<Slider />
-		</CoursesSlideContainer>
+		<CoursesGridContainer>
+			<CoursesTitleContainer>
+				<CoursesTitle>{CoursesTitleText}</CoursesTitle>
+			</CoursesTitleContainer>
+			<GridItems />
+		</CoursesGridContainer>
 	</CoursesContainer>
 );
 
