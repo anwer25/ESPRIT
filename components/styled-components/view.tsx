@@ -279,6 +279,7 @@ const CoursesGridContainer = styled.div`
 	border: 2px solid aqua;
 	height: 34rem;
 	width: 100%;
+	overflow: hidden;
 `;
 const CoursesTitleContainer = styled.div`
 	display: flex;
@@ -293,10 +294,18 @@ const CoursesGridItemsContainer = styled.div`
 	height: 80%;
 `;
 
-const CoursesGridItemContainer = styled(motion.div)``;
+const CoursesGridItemContainer = styled(motion.div)`
+	max-width: 23%;
+	margin: 1%;
+	padding: 0;
+`;
 
-const CoursesGridCard = styled(Image)``;
+const CoursesGridCard = styled(Image)`
+	min-width: 100%;
+	min-height: 100%;
+`;
 const CoursesGridTitle = styled.div``;
+const CoursesGridSubTitle = styled.div``;
 
 export {
 	Container,
@@ -344,4 +353,5 @@ export {
 	CoursesGridItemContainer,
 	CoursesGridCard,
 	CoursesGridTitle,
+	CoursesGridSubTitle,
 };
