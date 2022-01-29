@@ -9,6 +9,7 @@ import {
 import { CoursesTitle } from "../../styled-components/text";
 // eslint-disable-next-line import/extensions
 import { CoursesTitleText } from "../../../utils/varibales";
+// eslint-disable-next-line import/extensions
 import GridItems from "./grid";
 // eslint-disable-next-line no-undef
 const Courses: React.FC = (): JSX.Element => (

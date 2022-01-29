@@ -37,4 +37,28 @@ const CoursesTitle = styled.h3`
 	width: 50%;
 `;
 
-export { CompanyName, CompanyNameBar, CoursesTitle };
+const StyledLink = styled.a`
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+`;
+
+const CoursesCardTitle = styled.h3`
+	margin: 3px 0 0 0;
+	padding: 0;
+	color: ${(props) => props.theme.coursesCardTitelColor};
+`;
+const CoursesCardSubTitle = styled.p`
+	margin: 0;
+	padding: 0;
+	color: ${(props) => props.theme.coursesCardSubTitlelColor};
+`;
+
+export {
+	CompanyName,
+	CompanyNameBar,
+	CoursesTitle,
+	CoursesCardTitle,
+	CoursesCardSubTitle,
+	StyledLink,
+};

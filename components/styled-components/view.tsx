@@ -276,7 +276,6 @@ const CoursesContainer = styled.section`
 const CoursesGridContainer = styled.div`
 	display: flex;
 	flex-flow: column;
-	border: 2px solid aqua;
 	height: 34rem;
 	width: 100%;
 	overflow: hidden;

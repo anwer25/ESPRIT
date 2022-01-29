@@ -40,7 +40,9 @@ const [
 	defaultSearchSVGColor,
 	defaultSearchInputBorderColorHover,
 	defaultCoursesTitleColor,
-] = Array(4).fill(colorsName.blueBg.hex);
+	defaultCoursesCardTitelColor,
+	defaultCoursesCardSubTitlelColor,
+] = Array(6).fill(colorsName.blueBg.hex);
 
 const [defaultSecondCircleGradientColor] = Array(1).fill(
 	colorsName.WhiteG.gradient
@@ -77,6 +79,8 @@ const defaultTheme = {
 	facebookOpacity: defaultFacebookOpacity,
 	twitterOpacity: defaultTwitterOpacity,
 	coursesTitleColor: defaultCoursesTitleColor,
+	coursesCardTitelColor: defaultCoursesCardTitelColor,
+	coursesCardSubTitlelColor: defaultCoursesCardSubTitlelColor,
 };
 
 // eslint-disable-next-line import/prefer-default-export
