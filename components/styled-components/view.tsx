@@ -276,14 +276,13 @@ const CoursesContainer = styled.section`
 const CoursesGridContainer = styled.div`
 	display: flex;
 	flex-flow: column;
-	border: 2px solid aqua;
 	height: 34rem;
 	width: 100%;
 	overflow: hidden;
 `;
 const CoursesTitleContainer = styled.div`
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 	flex-flow: row nowrap;
 `;
@@ -306,6 +305,78 @@ const CoursesGridCard = styled(Image)`
 `;
 const CoursesGridTitle = styled.div``;
 const CoursesGridSubTitle = styled.div``;
+const ExploreGlobalContaier = styled.section`
+	background-color: ${(props) => props.theme.exploreContainerColor};
+	margin-top: 3rem;
+	padding-top: 6rem;
+`;
+const ExploreContianer = styled.div`
+	display: flex;
+	justify-content: space-between;
+	flex-flow: column nowrap;
+	height: 21rem;
+`;
+const ExploreTitleContainer = styled.div`
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 10%;
+	margin-bottom: 2rem;
+`;
+const ExploreLinkContainer = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	min-height: 10%;
+	margin-top: 3rem;
+`;
+const ExploreGridItemsContainer = styled.div`
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+`;
+const ExploreItemContainer = styled(motion.div)`
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	min-width: 23%;
+	min-height: 50%;
+	margin-bottom: 1rem;
+	align-items: center;
+	background-color: ${(props) => props.theme.exploreItemContainerColor};
+`;
+
+const ExploreItem = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-flow: row nowrap;
+	width: 100%;
+	height: 100%;
+`;
+const ExploreItemImageContainer = styled.div`
+	min-width: 50%;
+`;
+const ExploreItemTitleContainer = styled.div`
+	min-width: 50%;
+`;
+const ExploreItemImage = styled(Image)``;
+
+const StudentReviewGlobalContainer = styled.div`
+	margin-top: 3rem;
+`;
+const StudentReviewContainer = styled.section`
+	display: flex;
+	justify-content: space-between;
+	flex-flow: column nowrap;
+`;
+
+const StudentReviewTitleContainer = styled.div`
+	display: flex;
+	justify-content: flex-start;
+`;
+const StudentReviewSlideContainer = styled.div``;
 
 export {
 	Container,
@@ -354,4 +425,18 @@ export {
 	CoursesGridCard,
 	CoursesGridTitle,
 	CoursesGridSubTitle,
+	ExploreGlobalContaier,
+	ExploreContianer,
+	ExploreGridItemsContainer,
+	ExploreItemContainer,
+	ExploreItemImage,
+	ExploreItem,
+	ExploreItemImageContainer,
+	ExploreItemTitleContainer,
+	ExploreTitleContainer,
+	ExploreLinkContainer,
+	StudentReviewContainer,
+	StudentReviewGlobalContainer,
+	StudentReviewSlideContainer,
+	StudentReviewTitleContainer,
 };

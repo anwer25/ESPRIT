@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+// eslint-disable-next-line import/extensions
 import { CoursesGridItemsContainer } from "../../styled-components/view";
-import GrideItem from "../widget/courses/gride";
+// eslint-disable-next-line import/extensions
+import GridItem from "../widget/courses/gride";
 import image from "../../../public/Rectangle28(1).png";
 import ss from "../../../public/Rectangle28(2).png";
 import sd from "../../../public/Rectangle28(3).png";
@@ -10,7 +12,9 @@ import sx from "../../../public/Rectangle28.png";
 import xx from "../../../public/Thumbnail.png";
 import xxxx from "../../../public/Rectangle28(6).png";
 
+// eslint-disable-next-line no-undef
 const GridItems: React.FC = (): JSX.Element => {
+	// eslint-disable-next-line no-unused-vars
 	const [data, setData] = useState([
 		{ image, title: "Image1", subTitle: "Image 1 SubTitle" },
 		{ image: ss, title: "Image2", subTitle: "Image 2 SubTitle " },
@@ -24,10 +28,13 @@ const GridItems: React.FC = (): JSX.Element => {
 	useEffect(() => {}, []);
 	// @ts-ignore
 	// @ts-ignore
+	// @ts-ignore
 	return (
 		<CoursesGridItemsContainer>
 			{data.map((value, index) => (
-				<GrideItem data={value} key={index} />
+				// @ts-ignore
+				// eslint-disable-next-line react/no-array-index-key
+				<GridItem data={value} key={index} />
 			))}
 		</CoursesGridItemsContainer>
 	);

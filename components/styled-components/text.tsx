@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import { fonts } from "../../utils/varibales";
 
 const CompanyNameBar = styled.span`
@@ -37,4 +36,45 @@ const CoursesTitle = styled.h3`
 	width: 50%;
 `;
 
-export { CompanyName, CompanyNameBar, CoursesTitle };
+const StyledLink = styled.a`
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+`;
+
+const CoursesCardTitle = styled.h3`
+	margin: 3px 0 0 0;
+	padding: 0;
+	color: ${(props) => props.theme.coursesCardTitelColor};
+`;
+const CoursesCardSubTitle = styled.p`
+	margin: 0;
+	padding: 0;
+	color: ${(props) => props.theme.coursesCardSubTitlelColor};
+`;
+
+const ExploreTitle = styled.h3`
+	margin: 0;
+	padding: 0;
+	color: ${(props) => props.theme.exploreTilteColor};
+	font-family: "Source Serif 4", sans-serif;
+	font-weight: bold;
+	font-size: 3rem;
+`;
+const ExploreItemTitle = styled.p``;
+const StudentReviewTitle = styled.h3`
+	font-size: 3rem;
+	color: ${(props) => props.theme.studentReviewTitleColor};
+	font-family: "Source Serif 4", sans-serif;
+`;
+export {
+	CompanyName,
+	CompanyNameBar,
+	CoursesTitle,
+	CoursesCardTitle,
+	CoursesCardSubTitle,
+	StyledLink,
+	ExploreTitle,
+	ExploreItemTitle,
+	StudentReviewTitle,
+};

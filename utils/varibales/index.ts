@@ -40,7 +40,10 @@ const [
 	defaultSearchSVGColor,
 	defaultSearchInputBorderColorHover,
 	defaultCoursesTitleColor,
-] = Array(4).fill(colorsName.blueBg.hex);
+	defaultCoursesCardTitelColor,
+	defaultCoursesCardSubTitlelColor,
+	defaultExploreContainerColor,
+] = Array(7).fill(colorsName.blueBg.hex);
 
 const [defaultSecondCircleGradientColor] = Array(1).fill(
 	colorsName.WhiteG.gradient
@@ -56,6 +59,8 @@ const [defaultInstaOpacity, defaultFacebookOpacity, defaultTwitterOpacity] =
 const defaultSecondCircleBgColor = colorsName.WhiteG.hex;
 const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
+const [defaultExploreItemContainerColor, defaultStudentReviewTitleColor] =
+	Array(1).fill("#2357BF");
 const defaultTheme = {
 	navContainerColor: defaultNavContainerColor,
 	cerecleBorder: defaultCircleBorderColor,
@@ -77,6 +82,11 @@ const defaultTheme = {
 	facebookOpacity: defaultFacebookOpacity,
 	twitterOpacity: defaultTwitterOpacity,
 	coursesTitleColor: defaultCoursesTitleColor,
+	coursesCardTitelColor: defaultCoursesCardTitelColor,
+	coursesCardSubTitlelColor: defaultCoursesCardSubTitlelColor,
+	exploreContainerColor: defaultExploreContainerColor,
+	exploreItemContainerColor: defaultExploreItemContainerColor,
+	studentReviewTitleColor: defaultStudentReviewTitleColor,
 };
 
 // eslint-disable-next-line import/prefer-default-export
