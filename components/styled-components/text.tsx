@@ -67,6 +67,10 @@ const StudentReviewTitle = styled.h3`
 	color: ${(props) => props.theme.studentReviewTitleColor};
 	font-family: "Source Serif 4", sans-serif;
 `;
+
+const ReviewSlideTitle = styled.p``;
+const ReviewSlideSubTitle = styled.p``;
+const ReviewSlideText = styled.p``;
 export {
 	CompanyName,
 	CompanyNameBar,
@@ -77,4 +81,7 @@ export {
 	ExploreTitle,
 	ExploreItemTitle,
 	StudentReviewTitle,
+	ReviewSlideSubTitle,
+	ReviewSlideTitle,
+	ReviewSlideText,
 };

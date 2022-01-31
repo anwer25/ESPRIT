@@ -376,8 +376,44 @@ const StudentReviewTitleContainer = styled.div`
 	display: flex;
 	justify-content: flex-start;
 `;
-const StudentReviewSlideContainer = styled.div``;
+const StudentReviewSlideContainer = styled.div`
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 31.25rem;
+`;
+const SlideShowSlider = styled.div`
+	white-space: nowrap;
+	transition: ease 1000ms;
+`;
+const SlideItem = styled(motion.div)`
+	display: inline-flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	width: 100%;
+	height: 23.438rem;
+	background-color: aqua;
+	border-radius: 40px;
+`;
+const SlideImageContainer = styled.div`
+	max-height: 50%;
+	max-width: 50%;
+`;
 
+const SlideImage = styled(Image)`
+	border-radius: 40px;
+	height: 100%;
+	width: 100%;
+`;
+const SlideTitleSubTitleContainer = styled.div`
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: column nowrap;
+`;
+const SlideParagraphContainer = styled.div`
+	width: 50%;
+	height: 50%;
+	z-index: 1;
+`;
 export {
 	Container,
 	HeaderContainer,
@@ -439,4 +475,10 @@ export {
 	StudentReviewGlobalContainer,
 	StudentReviewSlideContainer,
 	StudentReviewTitleContainer,
+	SlideShowSlider,
+	SlideItem,
+	SlideImageContainer,
+	SlideImage,
+	SlideParagraphContainer,
+	SlideTitleSubTitleContainer,
 };
