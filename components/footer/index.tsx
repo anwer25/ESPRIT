@@ -18,7 +18,11 @@ import {
 	FooterTextCopyRight,
 	FooterTextInfo,
 } from "../styled-components/text";
-import { companyNameText, partnersLink } from "../../utils/varibales";
+import {
+	companyNameText,
+	ContactUs,
+	partnersLink,
+} from "../../utils/varibales";
 import LinkGenerator from "./widget/Generator";
 
 // eslint-disable-next-line no-undef
@@ -61,8 +65,8 @@ const Footer: React.FC = (): JSX.Element => (
 								section="Partners"
 							/>
 							<LinkGenerator
-								links={partnersLink}
-								section="Partners"
+								links={ContactUs}
+								section="Contact Us "
 							/>
 							<LinkGenerator
 								links={partnersLink}

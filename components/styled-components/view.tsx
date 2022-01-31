@@ -127,7 +127,7 @@ const NavLink = styled.div`
 const CircleContainer = styled.div`
 	position: relative;
 	top: 1.125rem;
-	left: 10rem;
+	right: 8rem;
 	display: inline-block;
 `;
 const CircleOne = styled.div`
@@ -181,9 +181,8 @@ const HeroContainer = styled.div`
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	position: absolute;
-	bottom: 3.688rem;
-	left: 21.563rem;
+	position: relative;
+	bottom: 11rem;
 `;
 
 const SocialMediaContainer = styled.div`
@@ -223,7 +222,7 @@ const GalleryContainer = styled.div``;
 
 const ImageGallery = styled(motion.img)`
 	max-height: 36rem;
-	max-width: 42rem;
+	min-width: 100%;
 	display: none;
 	overflow: hidden;
 `;

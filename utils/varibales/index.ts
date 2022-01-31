@@ -8,13 +8,22 @@ const links = {
 	facebook: "https://www.facebook.com",
 	twitter: "https://twitter.com/",
 };
-const partnersLink: linksType = [
+const partnersLink = [
 	{ name: "test1", link: "www.test1.tn" },
 	{ name: "test2", link: "www.test2.tn" },
 	{ name: "test3", link: "www.test3.tn" },
 	{ name: "test4", link: "www.test4.tn" },
 	{ name: "test5", link: "www.test5.tn" },
 ];
+
+const ContactUs = [
+	{ name: "test1", link: "www.test1.tn" },
+	{ name: "test2", link: "www.test2.tn" },
+	{ name: "test3", link: "www.test3.tn" },
+	{ name: "test4", link: "www.test4.tn" },
+	{ name: "test5", link: "www.test5.tn" },
+];
+
 const fonts = {
 	companyName: {
 		Lora: {
@@ -50,7 +59,6 @@ const [
 	defaultCoursesCardTitelColor,
 	defaultCoursesCardSubTitlelColor,
 	defaultExploreContainerColor,
-	defaultFooterInfoBgColor,
 	defaultEmailFormTitleTextColor,
 	defaultEmailFormLogo,
 	defaultEmailInputBorderColor,
@@ -61,6 +69,8 @@ const [
 const [defaultSecondCircleGradientColor] = Array(1).fill(
 	colorsName.WhiteG.gradient
 );
+
+const defaultFooterInfoBgColor = colorsName.DarkGray.hex;
 
 const [
 	defaultInstaColor,
@@ -122,4 +132,5 @@ export {
 	CoursesTitleText,
 	fonts,
 	partnersLink,
+	ContactUs,
 };
