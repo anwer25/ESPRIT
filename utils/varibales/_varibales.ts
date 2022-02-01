@@ -14,11 +14,4 @@ const defaultTheme = {
 };
 
 // eslint-disable-next-line import/prefer-default-export
-export {
-	companyNameText,
-	defaultNavContainerColor,
-	defaultCercleBorderColor,
-	defaultSecondCercleBgColor,
-	defaultSecondCercleGradientColor,
-	defaultTheme,
-};
+export { companyNameText, defaultTheme };
