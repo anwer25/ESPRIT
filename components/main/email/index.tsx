@@ -1,22 +1,22 @@
 import React from "react";
 import Image from "next/image";
 import {
-	Section,
-	FormContainer,
-	InputContainer,
-	ButtonContainer,
-	ImageContainer,
-	PositionContainer,
-	ColorH1Blue,
 	BrComponent,
-} from "./styledComponents/views";
-const myLoader = ({ src, width, quality }) => {
-	return `${src}?w=${width}&q=${quality || 75}`;
-};
+	ButtonContainer,
+	ColorH1Blue,
+	EmailSection,
+	FormContainer,
+	ImageContainer,
+	InputContainer,
+	PositionContainer,
+} from "../../styled-components/view";
+
+const myLoader = ({ src, width, quality }) =>
+	`${src}?w=${width}&q=${quality || 75}`;
 
 // eslint-disable-next-line no-undef
 const Emailinscription: React.FC = (): JSX.Element => (
-	<Section>
+	<EmailSection>
 		<div style={{ position: "relative", left: "90px", top: "100px" }}>
 			<FormContainer style={{ margin: "50px" }}>
 				<h1> Esprit</h1>{" "}
@@ -38,7 +38,7 @@ const Emailinscription: React.FC = (): JSX.Element => (
 				<ButtonContainer>Subscribe</ButtonContainer>
 			</PositionContainer>
 		</div>
-	</Section>
+	</EmailSection>
 );
 
 export default Emailinscription;

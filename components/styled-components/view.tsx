@@ -414,6 +414,108 @@ const SlideParagraphContainer = styled.div`
 	height: 50%;
 	z-index: 1;
 `;
+
+const BrComponent = styled.br``;
+
+const DisplayContainer = styled.li`
+	display: block;
+	text-align: left;
+	flex: 1;
+	list-style-type: none;
+	margin: 2rem;
+	padding: 2rem;
+	width: 540px;
+`;
+
+const FooterC = styled.div`
+	background-color: #13294b;
+	text-align: center;
+	padding: 15px;
+	color: grey;
+`;
+
+const FooterColor = styled.li`
+	color: #00bfff;
+	list-style-type: none;
+	margin: 15px;
+	padding: 10px;
+`;
+
+const ListContainer = styled.ul`
+	display: inline-flex;
+	margin: 25px;
+	padding: 20px;
+`;
+const EmailSection = styled.section`
+	background-color: #f0f8ff;
+	position: relative;
+	text-align: center;
+`;
+
+const FormContainer = styled.form`
+	text-shadow: 2px 2px 5px #00bfff;
+	color: #00bfff;
+	font-weight: bold;
+	font-size: 60px;
+	position: relative;
+	font-family: Comic -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+		sans-serif;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	top: 90px;
+	right: 20px;
+`;
+
+const InputContainer = styled.input`
+	border-bottom: 1px solid blue;
+	margin: 10px;
+	padding: 2rem;
+	position: relative;
+	height: 40px;
+	width: 250px;
+`;
+
+const ButtonContainer = styled.button`
+	display: inline-block;
+	padding: 15px 25px;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	outline: none;
+	color: white;
+	background-color: #0000ff;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	width: 250px;
+	height: 50px;
+`;
+
+const ImageContainer = styled.image`
+	float: left;
+	width: 550px;
+	height: 550px;
+	position: relative;
+	left: 165px;
+	bottom: 139px;
+`;
+
+const PositionContainer = styled.div`
+	position: relative;
+	right: 280px;
+	top: 70px;
+`;
+
+const ColorH1Blue = styled.h4`
+	color: blue;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-family: Comic;
+`;
+
 export {
 	Container,
 	HeaderContainer,
@@ -481,4 +583,16 @@ export {
 	SlideImage,
 	SlideParagraphContainer,
 	SlideTitleSubTitleContainer,
+	EmailSection,
+	BrComponent,
+	DisplayContainer,
+	FooterC,
+	FooterColor,
+	ListContainer,
+	FormContainer,
+	InputContainer,
+	ButtonContainer,
+	ImageContainer,
+	PositionContainer,
+	ColorH1Blue,
 };

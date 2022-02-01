@@ -1,19 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import {
-	Section,
+	EmailSection,
 	ColorH1Blue,
 	DisplayContainer,
 	ListContainer,
 	BrComponent,
-} from "./styledComponents/views";
-const myLoader = ({ src, width, quality }) => {
-	return `${src}?w=${width}&q=${quality || 75}`;
-};
+} from "../../styled-components/view";
+
+const myLoader = ({ src, width, quality }) =>
+	`${src}?w=${width}&q=${quality || 75}`;
 
 // eslint-disable-next-line no-undef
 const Article: React.FC = (): JSX.Element => (
-	<Section>
+	<EmailSection>
 		<ListContainer>
 			<DisplayContainer
 				style={{
@@ -82,7 +82,7 @@ const Article: React.FC = (): JSX.Element => (
 				<p> Learn your favorite course with world-class instructors </p>
 			</DisplayContainer>
 		</ListContainer>
-	</Section>
+	</EmailSection>
 );
 
 export default Article;
