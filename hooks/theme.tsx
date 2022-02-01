@@ -1,9 +1,8 @@
 import React, { useState, createContext, useMemo } from "react";
-import { defaultTheme } from "../utils/varibales/_varibales";
+import { defaultTheme } from "../utils/varibales";
 
 export const ThemeContext = createContext({});
 
-// eslint-disable-next-line no-undef
 const UseThemeProviderComponent: React.FC = ({ children }): JSX.Element => {
 	const [theme, setTheme] = useState(defaultTheme);
 	const themeMemo = useMemo(() => ({ theme, setTheme }), [theme]);
