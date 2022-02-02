@@ -71,6 +71,28 @@ const StudentReviewTitle = styled.h3`
 const ReviewSlideTitle = styled.p``;
 const ReviewSlideSubTitle = styled.p``;
 const ReviewSlideText = styled.p``;
+
+// Footer
+
+const FooterTextInfo = styled.p`
+	color: ${(props) => props.theme.footerInfoTextColor};
+	font-size: 1rem;
+	display: block;
+	min-height: 100%;
+	margin: 0;
+`;
+
+const FooterPartnersText = styled.p`
+	color: ${(props) => props.theme.footerPartnersTextColor};
+	font-size: 1rem;
+`;
+const FooterTextCopyRight = styled.h4`
+	text-align: center;
+	color: ${(props) => props.theme.footerTextCopyRightColor};
+	margin: 0;
+	padding: 0;
+`;
+
 export {
 	CompanyName,
 	CompanyNameBar,
@@ -84,4 +106,7 @@ export {
 	ReviewSlideSubTitle,
 	ReviewSlideTitle,
 	ReviewSlideText,
+	FooterTextInfo,
+	FooterTextCopyRight,
+	FooterPartnersText,
 };

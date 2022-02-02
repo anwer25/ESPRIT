@@ -8,7 +8,7 @@ const links = {
 	facebook: "https://www.facebook.com",
 	twitter: "https://twitter.com/",
 };
-
+const FooterLink;
 const fonts = {
 	companyName: {
 		Lora: {
@@ -33,7 +33,8 @@ const [
 	defaultSearchInputBorderColor,
 	defaultSearchButtonBorderColor,
 	defaultNavLinkSVGColor,
-] = Array(8).fill(colorsName.White.hex); // for white color #fff if you add another variable don't forget to add array length
+	defaultFooterTextCopyRightColor,
+] = Array(9).fill(colorsName.White.hex); // for white color #fff if you add another variable don't forget to add array length
 
 const [
 	defaultNavContainerColor,
@@ -43,15 +44,19 @@ const [
 	defaultCoursesCardTitelColor,
 	defaultCoursesCardSubTitlelColor,
 	defaultExploreContainerColor,
-] = Array(7).fill(colorsName.blueBg.hex);
+	defaultFooterInfoBgColor,
+] = Array(8).fill(colorsName.blueBg.hex);
 
 const [defaultSecondCircleGradientColor] = Array(1).fill(
 	colorsName.WhiteG.gradient
 );
 
-const [defaultInstaColor, defaultfacebookColor, defaultTwitterColor] = Array(
-	3
-).fill(colorsName.DarkPurple.hex);
+const [
+	defaultInstaColor,
+	defaultfacebookColor,
+	defaultTwitterColor,
+	defaultFooterCopyRightBgColor,
+] = Array(4).fill(colorsName.DarkPurple.hex);
 
 const [defaultInstaOpacity, defaultFacebookOpacity, defaultTwitterOpacity] =
 	Array(3).fill("1");
@@ -87,6 +92,9 @@ const defaultTheme = {
 	exploreContainerColor: defaultExploreContainerColor,
 	exploreItemContainerColor: defaultExploreItemContainerColor,
 	studentReviewTitleColor: defaultStudentReviewTitleColor,
+	footerInfoBgColor: defaultFooterInfoBgColor,
+	footerCopyRightBgColor: defaultFooterCopyRightBgColor,
+	footerTextCopyRightColor: defaultFooterTextCopyRightColor,
 };
 
 // eslint-disable-next-line import/prefer-default-export
