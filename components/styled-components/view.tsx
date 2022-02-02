@@ -22,7 +22,11 @@ const MainContainer = styled.main`
 `;
 
 const FooterContainer = styled.footer`
-	background-color: blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	height: 20rem;
 `;
 const MarginContainer = styled.div`
 	margin: 0 11.57rem;
@@ -412,7 +416,81 @@ const SlideTitleSubTitleContainer = styled.div`
 const SlideParagraphContainer = styled.div`
 	width: 50%;
 	height: 50%;
-	z-index: 1;
+`;
+
+// Footer  Start
+
+const FooterInfo = styled.section`
+	background-color: ${(props) => props.theme.footerInfoBgColor};
+	min-height: 90%;
+	min-width: 100%;
+`;
+const FooterCopyRight = styled.section`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 100%;
+	min-height: 10%;
+	background-color: ${(props) => props.theme.footerCopyRightBgColor};
+`;
+
+const FooterInfoContainer = styled.div`
+	display: flex;
+	flex-flow: column nowrap;
+`;
+
+const FooterInfoLogo = styled.div`
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+`;
+
+const FooterDataContainer = styled.div`
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+`;
+const FooterInfoText = styled.div`
+	flex: 1;
+	min-height: 100%;
+`;
+
+const FooterLinkContainer = styled.div`
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+`;
+const FooterPartners = styled.div`
+	display: flex;
+	flex-flow: column nowrap;
+`;
+
+const FooterPartnersTitle = styled.div`
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex: 1;
+`;
+
+const FooterPartnersLinkConntainer = styled.ul``;
+
+const FooterLi = styled.li`
+	display: block;
+	list-style: none;
+`;
+const FooterInfoConnect = styled.div`
+	display: flex;
+	flex-flow: column nowrap;
+`;
+const FooterInfoLegal = styled.div`
+	display: flex;
+	flex-flow: column nowrap;
+`;
+
+const FooterCopyRightTextContainer = styled.div`
+	text-align: center;
 `;
 
 const BrComponent = styled.br``;
@@ -583,6 +661,20 @@ export {
 	SlideImage,
 	SlideParagraphContainer,
 	SlideTitleSubTitleContainer,
+	FooterInfo,
+	FooterCopyRight,
+	FooterInfoContainer,
+	FooterLi,
+	FooterInfoLogo,
+	FooterDataContainer,
+	FooterInfoText,
+	FooterLinkContainer,
+	FooterPartners,
+	FooterPartnersTitle,
+	FooterPartnersLinkConntainer,
+	FooterInfoConnect,
+	FooterCopyRightTextContainer,
+	FooterInfoLegal,
 	EmailSection,
 	BrComponent,
 	DisplayContainer,
