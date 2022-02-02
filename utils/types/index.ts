@@ -1,5 +1,3 @@
-import {string} from "prop-types";
-
 export interface exploreData {
 	image: string;
 	title: string;
@@ -12,12 +10,12 @@ export interface slideDataProps {
 	paragraph: string;
 }
 
-export interface partnersLink = {
+export interface footerLink {
 	name: string;
 	link: string;
 }
 
-export interface par
+export type linkGeneratorProps = { links: Array<footerLink>; section: string };
 export type gridItemProps = { data: Array<exploreData> };
 
 export type slideProps = { reviews: Array<slideDataProps> };
