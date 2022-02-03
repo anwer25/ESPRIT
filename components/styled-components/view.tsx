@@ -20,14 +20,6 @@ const MainContainer = styled.main`
 	grid-column-gap: 0;
 	grid-row-gap: 0;
 `;
-
-const FooterContainer = styled.footer`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column nowrap;
-	height: 20rem;
-`;
 const MarginContainer = styled.div`
 	margin: 0 11.57rem;
 `;
@@ -418,7 +410,24 @@ const SlideParagraphContainer = styled.div`
 	height: 50%;
 `;
 
-// Footer  Start
+/* ---------------------------------------------Email Section Start------------------------------------------------ */
+
+const EmailSectionn = styled.section`
+	background-color: ${(props) => props.theme.emailSectionBgColor};
+`;
+/* ---------------------------------------------Email Section End------------------------------------------------ */
+
+/* ---------------------------------------------Main end------------------------------------------------ */
+
+/* ---------------------------------------------footer start------------------------------------------------ */
+
+const FooterContainer = styled.footer`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	height: 30rem;
+`;
 
 const FooterInfo = styled.section`
 	background-color: ${(props) => props.theme.footerInfoBgColor};
@@ -437,12 +446,14 @@ const FooterCopyRight = styled.section`
 const FooterInfoContainer = styled.div`
 	display: flex;
 	flex-flow: column nowrap;
+	margin-top: 7rem;
 `;
 
 const FooterInfoLogo = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	margin-bottom: 2rem;
 `;
 
 const FooterDataContainer = styled.div`
@@ -453,45 +464,45 @@ const FooterDataContainer = styled.div`
 const FooterInfoText = styled.div`
 	flex: 1;
 	min-height: 100%;
+	margin-right: 3rem;
 `;
 
 const FooterLinkContainer = styled.div`
 	flex: 1;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	flex-flow: row wrap;
 `;
-const FooterPartners = styled.div`
+const FooterLinkGenerator = styled.div`
 	display: flex;
 	flex-flow: column nowrap;
 `;
 
-const FooterPartnersTitle = styled.div`
+const FooterLinkGeneratorTitle = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	align-items: stretch;
 	flex: 1;
 `;
 
-const FooterPartnersLinkConntainer = styled.ul``;
+const FooterGeneratorLinkConntainer = styled.ul`
+	margin: 0;
+	padding: 0;
+`;
 
 const FooterLi = styled.li`
 	display: block;
 	list-style: none;
-`;
-const FooterInfoConnect = styled.div`
-	display: flex;
-	flex-flow: column nowrap;
-`;
-const FooterInfoLegal = styled.div`
-	display: flex;
-	flex-flow: column nowrap;
+	margin: 0.5rem 0;
 `;
 
 const FooterCopyRightTextContainer = styled.div`
 	text-align: center;
 `;
+
+/* ---------------------------------------------footer end------------------------------------------------ */
+/* ---------------------------------------------Style end------------------------------------------------ */
 
 const BrComponent = styled.br``;
 
@@ -526,8 +537,6 @@ const ListContainer = styled.ul`
 `;
 const EmailSection = styled.section`
 	background-color: #f0f8ff;
-	position: relative;
-	text-align: center;
 `;
 
 const FormContainer = styled.form`
@@ -669,12 +678,10 @@ export {
 	FooterDataContainer,
 	FooterInfoText,
 	FooterLinkContainer,
-	FooterPartners,
-	FooterPartnersTitle,
-	FooterPartnersLinkConntainer,
-	FooterInfoConnect,
+	FooterLinkGenerator,
+	FooterLinkGeneratorTitle,
+	FooterGeneratorLinkConntainer,
 	FooterCopyRightTextContainer,
-	FooterInfoLegal,
 	EmailSection,
 	BrComponent,
 	DisplayContainer,

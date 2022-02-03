@@ -80,9 +80,11 @@ const FooterTextInfo = styled.p`
 	display: block;
 	min-height: 100%;
 	margin: 0;
+	word-break: break-all;
+	line-height: 1.5rem;
 `;
 
-const FooterPartnersText = styled.p`
+const FooterGeneratorText = styled.p`
 	color: ${(props) => props.theme.footerPartnersTextColor};
 	font-size: 1rem;
 `;
@@ -108,5 +110,5 @@ export {
 	ReviewSlideText,
 	FooterTextInfo,
 	FooterTextCopyRight,
-	FooterPartnersText,
+	FooterGeneratorText,
 };

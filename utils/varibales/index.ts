@@ -8,7 +8,13 @@ const links = {
 	facebook: "https://www.facebook.com",
 	twitter: "https://twitter.com/",
 };
-const FooterLink;
+const partnersLink: linksType = [
+	{ name: "test1", link: "www.test1.tn" },
+	{ name: "test2", link: "www.test2.tn" },
+	{ name: "test3", link: "www.test3.tn" },
+	{ name: "test4", link: "www.test4.tn" },
+	{ name: "test5", link: "www.test5.tn" },
+];
 const fonts = {
 	companyName: {
 		Lora: {
@@ -105,4 +111,5 @@ export {
 	links,
 	CoursesTitleText,
 	fonts,
+	partnersLink,
 };
