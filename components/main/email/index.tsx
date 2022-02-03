@@ -1,44 +1,50 @@
 import React from "react";
-import Image from "next/image";
 import {
-	BrComponent,
-	ButtonContainer,
-	ColorH1Blue,
+	EmailForm,
+	EmailFormContainer,
+	EmailFormLogo,
+	EmailFormTitle,
+	EmailImage,
+	EmailImageContainer,
 	EmailSection,
-	FormContainer,
-	ImageContainer,
-	InputContainer,
-	PositionContainer,
+	EmailSectionGlobalContainer,
+	LogoBar,
+	MarginContainer,
 } from "../../styled-components/view";
+import {
+	CompanyName,
+	CompanyNameBar,
+	EmailFormLogoText,
+	EmailFormTitleText,
+} from "../../styled-components/text";
+import { companyNameText } from "../../../utils/varibales";
 
-const myLoader = ({ src, width, quality }) =>
-	`${src}?w=${width}&q=${quality || 75}`;
-
-// eslint-disable-next-line no-undef
-const Emailinscription: React.FC = (): JSX.Element => (
+const Email: React.FC = (): JSX.Element => (
 	<EmailSection>
-		<div style={{ position: "relative", left: "90px", top: "100px" }}>
-			<FormContainer style={{ margin: "50px" }}>
-				<h1> Esprit</h1>{" "}
-			</FormContainer>
-
-			<ImageContainer>
-				<Image
-					loader={myLoader}
-					src="./design.svg"
-					alt="design"
-					width={400}
-					height={400}
-				/>
-			</ImageContainer>
-			<PositionContainer>
-				<ColorH1Blue>Subscribe to Newsletter </ColorH1Blue>
-				<InputContainer placeholder="Email" required />
-				<BrComponent />
-				<ButtonContainer>Subscribe</ButtonContainer>
-			</PositionContainer>
-		</div>
+		<MarginContainer>
+			<EmailSectionGlobalContainer>
+				<EmailImageContainer>
+					<EmailImage
+						src="/./design.svg"
+						width="300px"
+						height="300px"
+						alt="herro"
+					/>
+				</EmailImageContainer>
+				<EmailFormContainer>
+					<EmailFormTitle>
+						<EmailFormTitleText>
+							Obtenez des mises à jour régulières de
+						</EmailFormTitleText>
+					</EmailFormTitle>
+					<EmailFormLogo>
+						<EmailFormLogoText>{companyNameText}</EmailFormLogoText>
+					</EmailFormLogo>
+					<EmailForm />
+				</EmailFormContainer>
+			</EmailSectionGlobalContainer>
+		</MarginContainer>
 	</EmailSection>
 );
 
-export default Emailinscription;
+export default Email;

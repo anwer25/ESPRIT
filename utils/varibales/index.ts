@@ -51,7 +51,9 @@ const [
 	defaultCoursesCardSubTitlelColor,
 	defaultExploreContainerColor,
 	defaultFooterInfoBgColor,
-] = Array(8).fill(colorsName.blueBg.hex);
+	defaultEmailFormTitleTextColor,
+	defaultEmailFormLogo,
+] = Array(11).fill(colorsName.blueBg.hex);
 
 const [defaultSecondCircleGradientColor] = Array(1).fill(
 	colorsName.WhiteG.gradient
@@ -98,6 +100,8 @@ const defaultTheme = {
 	exploreContainerColor: defaultExploreContainerColor,
 	exploreItemContainerColor: defaultExploreItemContainerColor,
 	studentReviewTitleColor: defaultStudentReviewTitleColor,
+	emailFormTitleTextColor: defaultEmailFormTitleTextColor,
+	emailFormLogo: defaultEmailFormLogo,
 	footerInfoBgColor: defaultFooterInfoBgColor,
 	footerCopyRightBgColor: defaultFooterCopyRightBgColor,
 	footerTextCopyRightColor: defaultFooterTextCopyRightColor,

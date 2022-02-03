@@ -71,9 +71,27 @@ const StudentReviewTitle = styled.h3`
 const ReviewSlideTitle = styled.p``;
 const ReviewSlideSubTitle = styled.p``;
 const ReviewSlideText = styled.p``;
+/* ---------------------EmailSection Start---------------- */
 
-// Footer
+const EmailFormTitleText = styled.p`
+	font-size: 2rem;
+	margin: 0;
+	padding: 0;
+	color: ${(props) => props.theme.emailFormTitleTextColor};
+`;
 
+const EmailFormLogoText = styled.h1`
+	@import url(${fonts.companyName.Lora.url});
+	margin: 0 0 0 0;
+	padding: 0;
+	font-family: ${fonts.companyName.Lora.fontFamily};
+	font-weight: 500;
+	color: ${(props) => props.theme.emailFormLogo};
+	font-size: 7rem;
+`;
+
+/* ---------------------EmailSection END---------------- */
+/* ---------------------Footer Start---------------- */
 const FooterTextInfo = styled.p`
 	color: ${(props) => props.theme.footerInfoTextColor};
 	font-size: 1rem;
@@ -83,18 +101,18 @@ const FooterTextInfo = styled.p`
 	word-break: break-all;
 	line-height: 1.5rem;
 `;
-
 const FooterGeneratorText = styled.p`
 	color: ${(props) => props.theme.footerPartnersTextColor};
 	font-size: 1rem;
 `;
+
 const FooterTextCopyRight = styled.h4`
 	text-align: center;
 	color: ${(props) => props.theme.footerTextCopyRightColor};
 	margin: 0;
 	padding: 0;
 `;
-
+/* ---------------------Footer END---------------- */
 export {
 	CompanyName,
 	CompanyNameBar,
@@ -108,6 +126,8 @@ export {
 	ReviewSlideSubTitle,
 	ReviewSlideTitle,
 	ReviewSlideText,
+	EmailFormTitleText,
+	EmailFormLogoText,
 	FooterTextInfo,
 	FooterTextCopyRight,
 	FooterGeneratorText,

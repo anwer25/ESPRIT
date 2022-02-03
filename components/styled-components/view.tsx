@@ -412,9 +412,30 @@ const SlideParagraphContainer = styled.div`
 
 /* ---------------------------------------------Email Section Start------------------------------------------------ */
 
-const EmailSectionn = styled.section`
+const EmailSection = styled.section`
 	background-color: ${(props) => props.theme.emailSectionBgColor};
+	min-height: 25rem;
 `;
+
+const EmailSectionGlobalContainer = styled.div`
+	padding-top: 2rem;
+	display: flex;
+	justify-content: center;
+`;
+
+const EmailImageContainer = styled.div``;
+const EmailImage = styled(Image)``;
+const EmailFormContainer = styled.div`
+	display: flex;
+	flex-flow: column nowrap;
+`;
+
+const EmailFormTitle = styled.div`
+	max-width: 17rem;
+`;
+const EmailFormLogo = styled.div``;
+const EmailForm = styled.form``;
+
 /* ---------------------------------------------Email Section End------------------------------------------------ */
 
 /* ---------------------------------------------Main end------------------------------------------------ */
@@ -534,9 +555,6 @@ const ListContainer = styled.ul`
 	display: inline-flex;
 	margin: 25px;
 	padding: 20px;
-`;
-const EmailSection = styled.section`
-	background-color: #f0f8ff;
 `;
 
 const FormContainer = styled.form`
@@ -670,6 +688,14 @@ export {
 	SlideImage,
 	SlideParagraphContainer,
 	SlideTitleSubTitleContainer,
+	EmailSection,
+	EmailSectionGlobalContainer,
+	EmailImageContainer,
+	EmailImage,
+	EmailFormContainer,
+	EmailFormTitle,
+	EmailFormLogo,
+	EmailForm,
 	FooterInfo,
 	FooterCopyRight,
 	FooterInfoContainer,
@@ -682,7 +708,6 @@ export {
 	FooterLinkGeneratorTitle,
 	FooterGeneratorLinkConntainer,
 	FooterCopyRightTextContainer,
-	EmailSection,
 	BrComponent,
 	DisplayContainer,
 	FooterC,
