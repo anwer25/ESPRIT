@@ -8,6 +8,7 @@ import Explore from "./explore";
 import StudentReview from "./review/index.";
 import Emailinscription from "./email";
 import Article from "./article";
+import Partner from "./partner";
 
 // eslint-disable-next-line no-undef
 const Main: React.FC = (): JSX.Element => (
@@ -18,6 +19,7 @@ const Main: React.FC = (): JSX.Element => (
 		{/* <StudentReview />
 		 <Article />
 		 */}
+		<Partner />
 		<Emailinscription />
 	</MainContainer>
 );

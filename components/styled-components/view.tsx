@@ -380,6 +380,10 @@ const StudentReviewSlideContainer = styled.div`
 const SlideShowSlider = styled.div`
 	white-space: nowrap;
 	transition: ease 1000ms;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row nowrap;
 `;
 const SlideItem = styled(motion.div)`
 	display: inline-flex;
@@ -409,32 +413,72 @@ const SlideParagraphContainer = styled.div`
 	width: 50%;
 	height: 50%;
 `;
-
+/* ---------------------------------------------Review Section END------------------------------------------------ */
+/* ---------------------------------------------Partners Section Start------------------------------------------------ */
+const PartnersSection = styled.section`
+	overflow: hidden;
+	margin: 2rem 0;
+`;
+const PartnersGlobalContainer = styled.div`
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 500px;
+`;
+const PartnersSlideContainer = styled.div`
+	white-space: nowrap;
+	transition: ease 1000ms;
+`;
+const PartnersSideImageContainers = styled.div`
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	& > span > span > img {
+		max-height: 15rem;
+	}
+`;
+const PartnersSlideImage = styled(Image)``;
+/* ---------------------------------------------Partners Section END------------------------------------------------ */
 /* ---------------------------------------------Email Section Start------------------------------------------------ */
 
 const EmailSection = styled.section`
 	background-color: ${(props) => props.theme.emailSectionBgColor};
 	min-height: 25rem;
 `;
-
 const EmailSectionGlobalContainer = styled.div`
 	padding-top: 2rem;
 	display: flex;
 	justify-content: center;
 `;
-
 const EmailImageContainer = styled.div``;
 const EmailImage = styled(Image)``;
 const EmailFormContainer = styled.div`
 	display: flex;
 	flex-flow: column nowrap;
 `;
-
 const EmailFormTitle = styled.div`
 	max-width: 17rem;
 `;
 const EmailFormLogo = styled.div``;
-const EmailForm = styled.form``;
+const EmailForm = styled.form`
+	display: flex;
+	flex-flow: column nowrap;
+`;
+const EmailInput = styled.input`
+	padding: 0.5rem;
+	border: 1px solid ${(props) => props.theme.emailInputBorderColor};
+	&:focus {
+		outline-color: ${(props) => props.theme.emailInputFocusColor};
+	}
+	margin-bottom: 0.5rem;
+`;
+const EmailButton = styled.button`
+	padding: 0.5rem;
+	background-color: ${(props) => props.theme.emailButtonBgColor};
+	border: none;
+	color: #fff;
+	font-weight: bold;
+`;
 
 /* ---------------------------------------------Email Section End------------------------------------------------ */
 
@@ -449,7 +493,6 @@ const FooterContainer = styled.footer`
 	flex-flow: column nowrap;
 	height: 30rem;
 `;
-
 const FooterInfo = styled.section`
 	background-color: ${(props) => props.theme.footerInfoBgColor};
 	min-height: 90%;
@@ -463,20 +506,17 @@ const FooterCopyRight = styled.section`
 	min-height: 10%;
 	background-color: ${(props) => props.theme.footerCopyRightBgColor};
 `;
-
 const FooterInfoContainer = styled.div`
 	display: flex;
 	flex-flow: column nowrap;
 	margin-top: 7rem;
 `;
-
 const FooterInfoLogo = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	margin-bottom: 2rem;
 `;
-
 const FooterDataContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
@@ -487,7 +527,6 @@ const FooterInfoText = styled.div`
 	min-height: 100%;
 	margin-right: 3rem;
 `;
-
 const FooterLinkContainer = styled.div`
 	flex: 1;
 	display: flex;
@@ -499,128 +538,27 @@ const FooterLinkGenerator = styled.div`
 	display: flex;
 	flex-flow: column nowrap;
 `;
-
 const FooterLinkGeneratorTitle = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	align-items: stretch;
 	flex: 1;
 `;
-
 const FooterGeneratorLinkConntainer = styled.ul`
 	margin: 0;
 	padding: 0;
 `;
-
 const FooterLi = styled.li`
 	display: block;
 	list-style: none;
 	margin: 0.5rem 0;
 `;
-
 const FooterCopyRightTextContainer = styled.div`
 	text-align: center;
 `;
 
 /* ---------------------------------------------footer end------------------------------------------------ */
 /* ---------------------------------------------Style end------------------------------------------------ */
-
-const BrComponent = styled.br``;
-
-const DisplayContainer = styled.li`
-	display: block;
-	text-align: left;
-	flex: 1;
-	list-style-type: none;
-	margin: 2rem;
-	padding: 2rem;
-	width: 540px;
-`;
-
-const FooterC = styled.div`
-	background-color: #13294b;
-	text-align: center;
-	padding: 15px;
-	color: grey;
-`;
-
-const FooterColor = styled.li`
-	color: #00bfff;
-	list-style-type: none;
-	margin: 15px;
-	padding: 10px;
-`;
-
-const ListContainer = styled.ul`
-	display: inline-flex;
-	margin: 25px;
-	padding: 20px;
-`;
-
-const FormContainer = styled.form`
-	text-shadow: 2px 2px 5px #00bfff;
-	color: #00bfff;
-	font-weight: bold;
-	font-size: 60px;
-	position: relative;
-	font-family: Comic -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-		sans-serif;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-	top: 90px;
-	right: 20px;
-`;
-
-const InputContainer = styled.input`
-	border-bottom: 1px solid blue;
-	margin: 10px;
-	padding: 2rem;
-	position: relative;
-	height: 40px;
-	width: 250px;
-`;
-
-const ButtonContainer = styled.button`
-	display: inline-block;
-	padding: 15px 25px;
-	font-size: 20px;
-	cursor: pointer;
-	text-align: center;
-	outline: none;
-	color: white;
-	background-color: #0000ff;
-	border: none;
-	border-radius: 15px;
-	box-shadow: 0 9px #999;
-	width: 250px;
-	height: 50px;
-`;
-
-const ImageContainer = styled.image`
-	float: left;
-	width: 550px;
-	height: 550px;
-	position: relative;
-	left: 165px;
-	bottom: 139px;
-`;
-
-const PositionContainer = styled.div`
-	position: relative;
-	right: 280px;
-	top: 70px;
-`;
-
-const ColorH1Blue = styled.h4`
-	color: blue;
-	margin: 0;
-	padding: 0;
-	font-weight: normal;
-	font-family: Comic;
-`;
-
 export {
 	Container,
 	HeaderContainer,
@@ -688,6 +626,11 @@ export {
 	SlideImage,
 	SlideParagraphContainer,
 	SlideTitleSubTitleContainer,
+	PartnersSection,
+	PartnersGlobalContainer,
+	PartnersSlideContainer,
+	PartnersSideImageContainers,
+	PartnersSlideImage,
 	EmailSection,
 	EmailSectionGlobalContainer,
 	EmailImageContainer,
@@ -696,6 +639,8 @@ export {
 	EmailFormTitle,
 	EmailFormLogo,
 	EmailForm,
+	EmailInput,
+	EmailButton,
 	FooterInfo,
 	FooterCopyRight,
 	FooterInfoContainer,
@@ -708,15 +653,4 @@ export {
 	FooterLinkGeneratorTitle,
 	FooterGeneratorLinkConntainer,
 	FooterCopyRightTextContainer,
-	BrComponent,
-	DisplayContainer,
-	FooterC,
-	FooterColor,
-	ListContainer,
-	FormContainer,
-	InputContainer,
-	ButtonContainer,
-	ImageContainer,
-	PositionContainer,
-	ColorH1Blue,
 };
