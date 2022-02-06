@@ -53,7 +53,10 @@ const [
 	defaultFooterInfoBgColor,
 	defaultEmailFormTitleTextColor,
 	defaultEmailFormLogo,
-] = Array(11).fill(colorsName.blueBg.hex);
+	defaultEmailInputBorderColor,
+	defaultEmailInputFocusColor,
+	defaultEmailButtonBgColor,
+] = Array(14).fill(colorsName.blueBg.hex);
 
 const [defaultSecondCircleGradientColor] = Array(1).fill(
 	colorsName.WhiteG.gradient
@@ -102,6 +105,9 @@ const defaultTheme = {
 	studentReviewTitleColor: defaultStudentReviewTitleColor,
 	emailFormTitleTextColor: defaultEmailFormTitleTextColor,
 	emailFormLogo: defaultEmailFormLogo,
+	emailInputBorderColor: defaultEmailInputBorderColor,
+	emailInputFocusColor: defaultEmailInputFocusColor,
+	emailButtonBgColor: defaultEmailButtonBgColor,
 	footerInfoBgColor: defaultFooterInfoBgColor,
 	footerCopyRightBgColor: defaultFooterCopyRightBgColor,
 	footerTextCopyRightColor: defaultFooterTextCopyRightColor,
