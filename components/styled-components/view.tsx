@@ -158,7 +158,6 @@ const circle = keyframes`
     translate(-126px)
     rotate(-360deg);
   }
-
 `;
 const Circle = styled.div`
 	width: 20px;
@@ -170,7 +169,6 @@ const Circle = styled.div`
 	margin: auto;
 	animation: ${circle} 6s linear infinite;
 `;
-
 const GalleryHomeContainer = styled.div`
 	margin: 0 11.75rem;
 	display: flex;
@@ -185,13 +183,11 @@ const HeroContainer = styled.div`
 	bottom: 3.688rem;
 	left: 21.563rem;
 `;
-
 const SocialMediaContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 `;
-
 const InstaContainer = styled.div`
 	margin-right: 1rem;
 `;
@@ -199,35 +195,28 @@ const FacebookContainer = styled.div`
 	margin-right: 1rem;
 `;
 const TwitterContainer = styled.div``;
-
 const InstaSVG = styled.svg``;
 const FacebookSVG = styled.svg``;
 const TwitterSVG = styled.svg``;
-
 const InstaPath = styled.path`
 	fill: ${(props) => props.theme.instaColor};
 	fill-opacity: ${(props) => props.theme.instaOpacity};
 `;
-
 const FacebookPath = styled.path`
 	fill: ${(props) => props.theme.facebookColor};
 	fill-opacity: ${(props) => props.theme.facebookOpacity};
 `;
-
 const TwitterPath = styled.path`
 	fill: ${(props) => props.theme.twitterColor};
 	fill-opacity: ${(props) => props.theme.twitterOpacity};
 `;
-
 const GalleryContainer = styled.div``;
-
 const ImageGallery = styled(motion.img)`
 	max-height: 36rem;
 	max-width: 42rem;
 	display: none;
 	overflow: hidden;
 `;
-
 const Next = styled.div`
 	top: calc(50% - 20px);
 	position: absolute;
@@ -245,7 +234,6 @@ const Next = styled.div`
 	z-index: 2;
 	right: 10px;
 `;
-
 const Prev = styled.div`
 	top: calc(50% - 20px);
 	position: absolute;
@@ -263,7 +251,6 @@ const Prev = styled.div`
 	z-index: 2;
 	left: 10px;
 `;
-
 const CoursesContainer = styled.section`
 	margin-top: 18rem;
 	display: flex;
@@ -282,19 +269,16 @@ const CoursesTitleContainer = styled.div`
 	align-items: center;
 	flex-flow: row nowrap;
 `;
-
 const CoursesGridItemsContainer = styled.div`
 	display: flex;
 	flex-flow: row wrap;
 	height: 80%;
 `;
-
 const CoursesGridItemContainer = styled(motion.div)`
 	max-width: 23%;
 	margin: 1%;
 	padding: 0;
 `;
-
 const CoursesGridCard = styled(Image)`
 	min-width: 100%;
 	min-height: 100%;
@@ -342,7 +326,6 @@ const ExploreItemContainer = styled(motion.div)`
 	align-items: center;
 	background-color: ${(props) => props.theme.exploreItemContainerColor};
 `;
-
 const ExploreItem = styled.div`
 	display: flex;
 	justify-content: space-evenly;
@@ -358,7 +341,6 @@ const ExploreItemTitleContainer = styled.div`
 	min-width: 50%;
 `;
 const ExploreItemImage = styled(Image)``;
-
 const StudentReviewGlobalContainer = styled.div`
 	margin-top: 3rem;
 `;
@@ -367,7 +349,6 @@ const StudentReviewContainer = styled.section`
 	justify-content: space-between;
 	flex-flow: column nowrap;
 `;
-
 const StudentReviewTitleContainer = styled.div`
 	display: flex;
 	justify-content: flex-start;
@@ -378,12 +359,12 @@ const StudentReviewSlideContainer = styled.div`
 	max-width: 31.25rem;
 `;
 const SlideShowSlider = styled.div`
-	white-space: nowrap;
-	transition: ease 1000ms;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-flow: row nowrap;
+	white-space: nowrap;
+	transition: ease 1000ms;
 `;
 const SlideItem = styled(motion.div)`
 	display: inline-flex;
@@ -398,7 +379,6 @@ const SlideImageContainer = styled.div`
 	max-height: 50%;
 	max-width: 50%;
 `;
-
 const SlideImage = styled(Image)`
 	border-radius: 40px;
 	height: 100%;
@@ -414,6 +394,9 @@ const SlideParagraphContainer = styled.div`
 	height: 50%;
 `;
 /* ---------------------------------------------Review Section END------------------------------------------------ */
+/* ---------------------------------------------Article Section Start------------------------------------------------ */
+
+/* ---------------------------------------------Article Section END------------------------------------------------ */
 /* ---------------------------------------------Partners Section Start------------------------------------------------ */
 const PartnersSection = styled.section`
 	overflow: hidden;
@@ -440,7 +423,6 @@ const PartnersSideImageContainers = styled.div`
 const PartnersSlideImage = styled(Image)``;
 /* ---------------------------------------------Partners Section END------------------------------------------------ */
 /* ---------------------------------------------Email Section Start------------------------------------------------ */
-
 const EmailSection = styled.section`
 	background-color: ${(props) => props.theme.emailSectionBgColor};
 	min-height: 25rem;
@@ -479,13 +461,9 @@ const EmailButton = styled.button`
 	color: #fff;
 	font-weight: bold;
 `;
-
 /* ---------------------------------------------Email Section End------------------------------------------------ */
-
 /* ---------------------------------------------Main end------------------------------------------------ */
-
 /* ---------------------------------------------footer start------------------------------------------------ */
-
 const FooterContainer = styled.footer`
 	display: flex;
 	justify-content: center;
@@ -556,7 +534,6 @@ const FooterLi = styled.li`
 const FooterCopyRightTextContainer = styled.div`
 	text-align: center;
 `;
-
 /* ---------------------------------------------footer end------------------------------------------------ */
 /* ---------------------------------------------Style end------------------------------------------------ */
 export {

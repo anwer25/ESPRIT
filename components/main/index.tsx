@@ -15,10 +15,8 @@ const Main: React.FC = (): JSX.Element => (
 	<MainContainer>
 		<Courses />
 		<Explore />
-
-		{/* <StudentReview />
-		 <Article />
-		 */}
+		{/* <StudentReview /> */}
+		<Article />
 		<Partner />
 		<Emailinscription />
 	</MainContainer>
