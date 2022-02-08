@@ -395,6 +395,34 @@ const SlideParagraphContainer = styled.div`
 /* ---------------------------------------------Review Section END------------------------------------------------ */
 /* ---------------------------------------------Article Section Start------------------------------------------------ */
 
+const ArticleGlobalContainer = styled.section`
+	background-color: ${(props) => props.theme.articleBgColor};
+	margin: 5rem 0;
+	height: 25rem;
+`;
+
+const ArticleContainer = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+`;
+const ArticleItemContainer = styled.div`
+	display: flex;
+	flex-flow: column;
+`;
+const ArticleImageContainer = styled.div`
+	& span > span > img {
+		max-height: 13rem;
+		max-width: 15rem;
+	}
+`;
+const ArticleTitleContainer = styled.div`
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+`;
+const ArticleParaContainer = styled.div``;
+
 /* ---------------------------------------------Article Section END------------------------------------------------ */
 /* ---------------------------------------------Partners Section Start------------------------------------------------ */
 const PartnersSection = styled.section`
@@ -608,6 +636,12 @@ export {
 	PartnersSideImageContainers,
 	PartnersSlideImage,
 	EmailSection,
+	ArticleGlobalContainer,
+	ArticleContainer,
+	ArticleItemContainer,
+	ArticleImageContainer,
+	ArticleTitleContainer,
+	ArticleParaContainer,
 	EmailSectionGlobalContainer,
 	EmailImageContainer,
 	EmailImage,

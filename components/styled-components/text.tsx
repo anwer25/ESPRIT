@@ -71,6 +71,18 @@ const StudentReviewTitle = styled.h3`
 const ReviewSlideTitle = styled.p``;
 const ReviewSlideSubTitle = styled.p``;
 const ReviewSlideText = styled.p``;
+/* ---------------------Article Section Start---------------- */
+
+const ArticleNumberText = styled.p`
+	color: ${(props) => props.theme.articleNumberTextColor};
+	font-size: large;
+	font-weight: bold;
+`;
+const ArticleTitleText = styled.h3``;
+const ArticleText = styled.p`
+	color: ${(props) => props.theme.artivleTextColor};
+`;
+/* ---------------------Article Section END---------------- */
 /* ---------------------EmailSection Start---------------- */
 
 const EmailFormTitleText = styled.p`
@@ -126,6 +138,9 @@ export {
 	ReviewSlideSubTitle,
 	ReviewSlideTitle,
 	ReviewSlideText,
+	ArticleNumberText,
+	ArticleTitleText,
+	ArticleText,
 	EmailFormTitleText,
 	EmailFormLogoText,
 	FooterTextInfo,

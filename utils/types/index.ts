@@ -20,6 +20,15 @@ export interface footerLink {
 	link: string;
 }
 
+export interface articleItems {
+	image: string;
+	number: string;
+	title: string;
+	para: string;
+}
+
+export type articleItemsProps = { data: Array<articleItems> };
+
 export type linkGeneratorProps = { links: Array<footerLink>; section: string };
 export type gridItemProps = { data: Array<exploreData> };
 
