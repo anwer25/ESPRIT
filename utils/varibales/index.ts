@@ -8,22 +8,30 @@ const links = {
 	facebook: "https://www.facebook.com",
 	twitter: "https://twitter.com/",
 };
-const partnersLink = [
-	{ name: "test1", link: "www.test1.tn" },
-	{ name: "test2", link: "www.test2.tn" },
-	{ name: "test3", link: "www.test3.tn" },
-	{ name: "test4", link: "www.test4.tn" },
-	{ name: "test5", link: "www.test5.tn" },
+const ContactUSLink: LinkStyle = [
+	{ name: "Page Officiel ", link: "www.test5.tn" },
+	{ name: "Adresse", link: "www.test1.tn" },
+	{ name: "Social Media", link: "www.test5.tn" },
+	{ name: "Tél :71 94 15 41", link: "www.test2.tn" },
+	{ name: "Fax :71 94 18 89", link: "www.test3.tn" },
+	{ name: "Email", link: "www.test4.tn" },
 ];
-
-const ContactUs = [
-	{ name: "test1", link: "www.test1.tn" },
-	{ name: "test2", link: "www.test2.tn" },
-	{ name: "test3", link: "www.test3.tn" },
-	{ name: "test4", link: "www.test4.tn" },
-	{ name: "test5", link: "www.test5.tn" },
+const VousEteslink: LinkStyle = [
+	{ name: "Condidat à une formation", link: "www.test1.tn" },
+	{ name: "Condidat non Tunisien ", link: "www.test2.tn" },
+	{ name: "Elève d'ESPRIT", link: "www.test3.tn" },
+	{ name: "Diplômé d'ESPRIT ", link: "www.test4.tn" },
+	{ name: "Parent d'élève", link: "www.test5.tn" },
+	{ name: "Entreprise", link: "www.test.tn" },
 ];
-
+const QuiSommeNousLink: LinkStyle = [
+	{ name: "Presentation", link: "www.test1.tn" },
+	{ name: "Formation", link: "www.test2.tn" },
+	{ name: "Recherche et Innovation", link: "www.test3.tn" },
+	{ name: "Activité Associatives", link: "www.test4.tn" },
+	{ name: "Organisation", link: "www.test5.tn" },
+	{ name: "FAQ", link: "www.test5.tn" },
+];
 const fonts = {
 	companyName: {
 		Lora: {
@@ -40,6 +48,12 @@ const fonts = {
 };
 
 const [
+	defaultNavContainerColor,
+	defaultExploreContainerColor,
+	defaultFooterInfoBgColor,
+] = Array(3).fill("#696969");
+
+const [
 	defaultCircleBorderColor,
 	defaultCompanyNameColor,
 	defaultCompanyBarColor,
@@ -49,10 +63,9 @@ const [
 	defaultSearchButtonBorderColor,
 	defaultNavLinkSVGColor,
 	defaultFooterTextCopyRightColor,
-] = Array(9).fill(colorsName.White.hex); // for white color #fff if you add another variable don't forget to add array length
+] = Array(9).fill("#fff"); // for white color #fff if you add another variable don't forget to add array length
 
 const [
-	defaultNavContainerColor,
 	defaultSearchSVGColor,
 	defaultSearchInputBorderColorHover,
 	defaultCoursesTitleColor,
@@ -61,32 +74,23 @@ const [
 	defaultExploreContainerColor,
 	defaultEmailFormTitleTextColor,
 	defaultEmailFormLogo,
-	defaultEmailInputBorderColor,
-	defaultEmailInputFocusColor,
-	defaultEmailButtonBgColor,
-] = Array(14).fill(colorsName.blueBg.hex);
+] = Array(10).fill(colorsName.blueBg.hex);
 
-const [defaultSecondCircleGradientColor] = Array(1).fill(
-	colorsName.WhiteG.gradient
-);
+const [defaultSecondCircleGradientColor] = Array(1).fill(colorsName.WhiteG.hex);
 
-const defaultFooterInfoBgColor = colorsName.DarkGray.hex;
-
-const [
-	defaultInstaColor,
-	defaultfacebookColor,
-	defaultTwitterColor,
-	defaultFooterCopyRightBgColor,
-] = Array(4).fill(colorsName.DarkPurple.hex);
+const [defaultFooterCopyRightBgColor] = Array(1).fill(colorsName.DarkGray.hex);
+const [defaultInstaColor, defaultfacebookColor, defaultTwitterColo] = Array(
+	3
+).fill(colorsName.White.hex);
 
 const [defaultInstaOpacity, defaultFacebookOpacity, defaultTwitterOpacity] =
 	Array(3).fill("1");
 
-const defaultSecondCircleBgColor = colorsName.WhiteG.hex;
+const [defaultSecondCircleBgColor] = Array(1).fill(colorsName.WhiteG.hex);
 const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
-const [defaultExploreItemContainerColor, defaultStudentReviewTitleColor] =
-	Array(1).fill("#2357BF");
+const [defaultStudentReviewTitleColor] = Array(1).fill("#2357BF");
+const [defaultExploreItemContainerColor] = Array(1).fill(" #3a3b3c ");
 const defaultTheme = {
 	navContainerColor: defaultNavContainerColor,
 	cerecleBorder: defaultCircleBorderColor,
@@ -103,7 +107,7 @@ const defaultTheme = {
 	navLinkSVGColor: defaultNavLinkSVGColor,
 	instaColor: defaultInstaColor,
 	facebookColor: defaultfacebookColor,
-	twitterColor: defaultTwitterColor,
+	twitterColor: defaultTwitterColo,
 	instaOpacity: defaultInstaOpacity,
 	facebookOpacity: defaultFacebookOpacity,
 	twitterOpacity: defaultTwitterOpacity,
@@ -115,9 +119,6 @@ const defaultTheme = {
 	studentReviewTitleColor: defaultStudentReviewTitleColor,
 	emailFormTitleTextColor: defaultEmailFormTitleTextColor,
 	emailFormLogo: defaultEmailFormLogo,
-	emailInputBorderColor: defaultEmailInputBorderColor,
-	emailInputFocusColor: defaultEmailInputFocusColor,
-	emailButtonBgColor: defaultEmailButtonBgColor,
 	footerInfoBgColor: defaultFooterInfoBgColor,
 	footerCopyRightBgColor: defaultFooterCopyRightBgColor,
 	footerTextCopyRightColor: defaultFooterTextCopyRightColor,
@@ -131,6 +132,7 @@ export {
 	links,
 	CoursesTitleText,
 	fonts,
-	partnersLink,
-	ContactUs,
+	ContactUSLink,
+	QuiSommeNousLink,
+	VousEteslink,
 };

@@ -20,8 +20,9 @@ import {
 } from "../styled-components/text";
 import {
 	companyNameText,
-	ContactUs,
-	partnersLink,
+	ContactUSLink,
+	QuiSommeNousLink,
+	VousEteslink,
 } from "../../utils/varibales";
 import LinkGenerator from "./widget/Generator";
 
@@ -61,16 +62,17 @@ const Footer: React.FC = (): JSX.Element => (
 						</FooterInfoText>
 						<FooterLinkContainer>
 							<LinkGenerator
-								links={partnersLink}
-								section="Partners"
+								links={VousEteslink}
+								section="Vous etes"
 							/>
 							<LinkGenerator
-								links={ContactUs}
-								section="Contact Us "
+								links={QuiSommeNousLink}
+								section="Qui Somme Nous"
 							/>
 							<LinkGenerator
-								links={partnersLink}
-								section="Partners"
+								links={ContactUSLink}
+								section="Contact Us"
+								// eslint-disable-next-line no-undef
 							/>
 						</FooterLinkContainer>
 					</FooterDataContainer>
