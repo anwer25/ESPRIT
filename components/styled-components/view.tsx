@@ -162,7 +162,7 @@ const circle = keyframes`
 const Circle = styled.div`
 	width: 20px;
 	height: 20px;
-	background: cyan;
+	background: white;
 	border-radius: 50%;
 	position: absolute;
 	overflow: hidden;
@@ -174,13 +174,17 @@ const GalleryHomeContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: absolute;
+	bottom: 2rem;
+	left: -250px;
 `;
 const HeroContainer = styled.div`
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	position: relative;
-	bottom: 11rem;
+	position: absolute;
+	bottom: 3rem;
+	left: 21.563rem;
 `;
 const SocialMediaContainer = styled.div`
 	display: flex;
@@ -211,8 +215,8 @@ const TwitterPath = styled.path`
 `;
 const GalleryContainer = styled.div``;
 const ImageGallery = styled(motion.img)`
-	max-height: 36rem;
-	min-width: 100%;
+	max-height: 30rem;
+	width: 60rem;
 	display: none;
 	overflow: hidden;
 `;
@@ -323,7 +327,7 @@ const ExploreItemContainer = styled(motion.div)`
 	min-height: 50%;
 	margin-bottom: 1rem;
 	align-items: center;
-	background-color: ${(props) => props.theme.exploreItemContainerColor};
+	background-color: #3a3b3c;
 `;
 const ExploreItem = styled.div`
 	display: flex;
@@ -395,6 +399,34 @@ const SlideParagraphContainer = styled.div`
 /* ---------------------------------------------Review Section END------------------------------------------------ */
 /* ---------------------------------------------Article Section Start------------------------------------------------ */
 
+const ArticleGlobalContainer = styled.section`
+	background-color: ${(props) => props.theme.articleBgColor};
+	margin: 5rem 0;
+	height: 25rem;
+`;
+
+const ArticleContainer = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+`;
+const ArticleItemContainer = styled.div`
+	display: flex;
+	flex-flow: column;
+`;
+const ArticleImageContainer = styled.div`
+	& span > span > img {
+		max-height: 13rem;
+		max-width: 15rem;
+	}
+`;
+const ArticleTitleContainer = styled.div`
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+`;
+const ArticleParaContainer = styled.div``;
+
 /* ---------------------------------------------Article Section END------------------------------------------------ */
 /* ---------------------------------------------Partners Section Start------------------------------------------------ */
 const PartnersSection = styled.section`
@@ -457,7 +489,7 @@ const EmailButton = styled.button`
 	padding: 0.5rem;
 	background-color: ${(props) => props.theme.emailButtonBgColor};
 	border: none;
-	color: #fff;
+	color: #696969;
 	font-weight: bold;
 `;
 /* ---------------------------------------------Email Section End------------------------------------------------ */
@@ -510,6 +542,8 @@ const FooterLinkContainer = styled.div`
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-flow: row wrap;
+	position: relative;
+	bottom: 3.38rem;
 `;
 const FooterLinkGenerator = styled.div`
 	display: flex;
@@ -608,6 +642,12 @@ export {
 	PartnersSideImageContainers,
 	PartnersSlideImage,
 	EmailSection,
+	ArticleGlobalContainer,
+	ArticleContainer,
+	ArticleItemContainer,
+	ArticleImageContainer,
+	ArticleTitleContainer,
+	ArticleParaContainer,
 	EmailSectionGlobalContainer,
 	EmailImageContainer,
 	EmailImage,

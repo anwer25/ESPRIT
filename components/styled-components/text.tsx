@@ -71,6 +71,24 @@ const StudentReviewTitle = styled.h3`
 const ReviewSlideTitle = styled.p``;
 const ReviewSlideSubTitle = styled.p``;
 const ReviewSlideText = styled.p``;
+/* ---------------------Article Section Start---------------- */
+
+const ArticleNumberText = styled.p`
+	color: ${(props) => props.theme.articleNumberTextColor};
+	font-size: large;
+	font-weight: bold;
+`;
+const ArticleTitleText = styled.h3`
+	color: ${(props) => props.theme.ArticleTitleTextColor};
+	font-weight: bolder;
+	margin-top: 0;
+`;
+const ArticleText = styled.p`
+	color: ${(props) => props.theme.artivleTextColor};
+	margin-top: 0;
+	text-align: center;
+`;
+/* ---------------------Article Section END---------------- */
 /* ---------------------EmailSection Start---------------- */
 
 const EmailFormTitleText = styled.p`
@@ -102,13 +120,17 @@ const FooterTextInfo = styled.p`
 	line-height: 1.5rem;
 `;
 const FooterGeneratorText = styled.p`
-	color: ${(props) => props.theme.footerPartnersTextColor};
+	color: white;
 	font-size: 1rem;
+	font-weight: bold;
+	position: relative;
+	bottom: 1rem;
 `;
 
 const FooterTextCopyRight = styled.h4`
 	text-align: center;
-	color: ${(props) => props.theme.footerTextCopyRightColor};
+	color: darkgray;
+	font-family: arial;
 	margin: 0;
 	padding: 0;
 `;
@@ -126,6 +148,9 @@ export {
 	ReviewSlideSubTitle,
 	ReviewSlideTitle,
 	ReviewSlideText,
+	ArticleNumberText,
+	ArticleTitleText,
+	ArticleText,
 	EmailFormTitleText,
 	EmailFormLogoText,
 	FooterTextInfo,
