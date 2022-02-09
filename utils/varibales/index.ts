@@ -8,7 +8,7 @@ const links = {
 	facebook: "https://www.facebook.com",
 	twitter: "https://twitter.com/",
 };
-const ContactUSLink: LinkStyle = [
+const ContactUSLink = [
 	{ name: "Page Officiel ", link: "www.test5.tn" },
 	{ name: "Adresse", link: "www.test1.tn" },
 	{ name: "Social Media", link: "www.test5.tn" },
@@ -16,7 +16,7 @@ const ContactUSLink: LinkStyle = [
 	{ name: "Fax :71 94 18 89", link: "www.test3.tn" },
 	{ name: "Email", link: "www.test4.tn" },
 ];
-const VousEteslink: LinkStyle = [
+const VousEteslink = [
 	{ name: "Condidat à une formation", link: "www.test1.tn" },
 	{ name: "Condidat non Tunisien ", link: "www.test2.tn" },
 	{ name: "Elève d'ESPRIT", link: "www.test3.tn" },
@@ -24,7 +24,7 @@ const VousEteslink: LinkStyle = [
 	{ name: "Parent d'élève", link: "www.test5.tn" },
 	{ name: "Entreprise", link: "www.test.tn" },
 ];
-const QuiSommeNousLink: LinkStyle = [
+const QuiSommeNousLink = [
 	{ name: "Presentation", link: "www.test1.tn" },
 	{ name: "Formation", link: "www.test2.tn" },
 	{ name: "Recherche et Innovation", link: "www.test3.tn" },
@@ -71,10 +71,9 @@ const [
 	defaultCoursesTitleColor,
 	defaultCoursesCardTitelColor,
 	defaultCoursesCardSubTitlelColor,
-	defaultExploreContainerColor,
 	defaultEmailFormTitleTextColor,
 	defaultEmailFormLogo,
-] = Array(10).fill(colorsName.blueBg.hex);
+] = Array(9).fill(colorsName.blueBg.hex);
 
 const [defaultSecondCircleGradientColor] = Array(1).fill(colorsName.WhiteG.hex);
 

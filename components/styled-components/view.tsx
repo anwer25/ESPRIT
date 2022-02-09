@@ -541,9 +541,7 @@ const FooterLinkContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	flex-flow: row wrap;
-	position: relative;
-	bottom: 3.38rem;
+	flex-flow: row nowrap;
 `;
 const FooterLinkGenerator = styled.div`
 	display: flex;
