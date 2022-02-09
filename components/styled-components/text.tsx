@@ -102,13 +102,17 @@ const FooterTextInfo = styled.p`
 	line-height: 1.5rem;
 `;
 const FooterGeneratorText = styled.p`
-	color: ${(props) => props.theme.footerPartnersTextColor};
+	color: white;
 	font-size: 1rem;
+	font-weight: bold;
+	position: relative;
+	bottom: 1rem;
 `;
 
 const FooterTextCopyRight = styled.h4`
 	text-align: center;
-	color: ${(props) => props.theme.footerTextCopyRightColor};
+	color: darkgray;
+	font-family: arial;
 	margin: 0;
 	padding: 0;
 `;
