@@ -78,9 +78,15 @@ const ArticleNumberText = styled.p`
 	font-size: large;
 	font-weight: bold;
 `;
-const ArticleTitleText = styled.h3``;
+const ArticleTitleText = styled.h3`
+	color: ${(props) => props.theme.ArticleTitleTextColor};
+	font-weight: bolder;
+	margin-top: 0;
+`;
 const ArticleText = styled.p`
 	color: ${(props) => props.theme.artivleTextColor};
+	margin-top: 0;
+	text-align: center;
 `;
 /* ---------------------Article Section END---------------- */
 /* ---------------------EmailSection Start---------------- */
