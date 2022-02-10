@@ -15,7 +15,7 @@ import SearchBar from "./widget/search/searchBar";
 // eslint-disable-next-line import/extensions
 import NavBar from "./widget/navbar/navBar";
 import MainCircle from "./widget/circle/circle";
-import Hero from "./widget/gallery";
+import Hero from "./widget/hero";
 
 // eslint-disable-next-line no-undef
 const Header: React.FC = (): JSX.Element => (
@@ -31,10 +31,10 @@ const Header: React.FC = (): JSX.Element => (
 				<SearchBar />
 				<div>.</div>
 			</Nav>
+			<Hero />
 		</MarginContainer>
 		<MainCircle />
 		<NavBar />
-		<Hero />
 	</HeaderContainer>
 );
 
