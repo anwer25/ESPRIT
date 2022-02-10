@@ -16,8 +16,8 @@ const Main: React.FC = (): JSX.Element => (
 		<Courses />
 		<Explore />
 		{/* <StudentReview /> */}
-		<Article />
 		<Partner />
+		<Article />
 		<Emailinscription />
 	</MainContainer>
 );
