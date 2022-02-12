@@ -4,10 +4,10 @@ import {
 	HeroSlideContainer,
 } from "../../../styled-components/view";
 import Social from "./social";
-import p1 from "../../../../public/p1.png";
-import p2 from "../../../../public/p2.png";
-import p3 from "../../../../public/p4.png";
-import p4 from "../../../../public/p5.jpg";
+import esprit from "../../../../public/esprit.jpg";
+import header from "../../../../public/header.jpg";
+import header1 from "../../../../public/header1.jpg";
+import header2 from "../../../../public/header2.png";
 import Slide from "./slide";
 
 // eslint-disable-next-line no-undef
@@ -16,10 +16,10 @@ const Hero: React.FC = (): JSX.Element => {
 	useEffect(() => {
 		console.log("hello");
 		setData([
-			{ image: p1, title: "p1" },
-			{ image: p2, title: "p2" },
-			{ image: p3, title: "p3" },
-			{ image: p4, title: "p4" },
+			{ image: esprit, title: "1" },
+			{ image: header, title: "2" },
+			{ image: header1, title: "3" },
+			{ image: header2, title: "4" },
 		]);
 	}, []);
 	return (
