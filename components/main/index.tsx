@@ -15,6 +15,7 @@ import Article from "./article";
 import Partner from "./partner";
 import { constants } from "zlib";
 import Industriel from "./industriel";
+import Technologic from "./technologique";
 
 // eslint-disable-next-line no-undef
 const Main: React.FC = (): JSX.Element => (
@@ -55,7 +56,7 @@ const Main: React.FC = (): JSX.Element => (
 				}}
 			>
 				Technologique
-				<Partner />
+				<Technologic />
 			</a>
 		</CoursesTitleContainer>
 
