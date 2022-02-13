@@ -3,27 +3,57 @@ import React, { useEffect, useState } from "react";
 import { CoursesGridItemsContainer } from "../../styled-components/view";
 // eslint-disable-next-line import/extensions
 import GridItem from "../widget/courses/gride";
-import image from "../../../public/Rectangle28(1).png";
-import ss from "../../../public/Rectangle28(2).png";
-import sd from "../../../public/Rectangle28(3).png";
-import sxxx from "../../../public/Rectangle28(4).png";
-import xcc from "../../../public/Rectangle28(5).png";
-import sx from "../../../public/Rectangle28.png";
-import xx from "../../../public/Thumbnail.png";
-import xxxx from "../../../public/Rectangle28(6).png";
+import architect from "../../../public/architect.jpg";
+import uml from "../../../public/uml.jpg";
+import security from "../../../public/secure.png";
+import sql from "../../../public/sql.jpg";
+import iot from "../../../public/iot.png";
+import sid from "../../../public/decision.jpg";
+import server from "../../../public/web_server.jpg";
+import client from "../../../public/web_client.jpg";
 
 // eslint-disable-next-line no-undef
 const GridItems: React.FC = (): JSX.Element => {
 	// eslint-disable-next-line no-unused-vars
 	const [data, setData] = useState([
-		{ image, title: "Image1", subTitle: "Image 1 SubTitle" },
-		{ image: ss, title: "Image2", subTitle: "Image 2 SubTitle " },
-		{ image: sd, title: "Image3", subTitle: "Image 3 SubTitle" },
-		{ image: sxxx, title: "Image4", subTitle: "Image 4 SubTitle" },
-		{ image: xcc, title: "Image5", subTitle: "Image 5 SubTitle" },
-		{ image: sx, title: "Image6", subTitle: "Image 7 SubTitle" },
-		{ image: xx, title: "Image7", subTitle: "Image 8 SubTitle" },
-		{ image: xxxx, title: "Image8", subTitle: "Image 9 SubTitle" },
+		{
+			architect,
+			title: "Architecture logicielle et conception avancée",
+			subTitle: "Développer un modéle Architectural",
+		},
+		{
+			image: uml,
+			title: "UML",
+			subTitle: "Modéliser une application avec UML de A à Z",
+		},
+		{
+			image: security,
+			title: "Sécurité",
+			subTitle:
+				"Les stratégies de sécurité et les systèmes de protection ",
+		},
+		{
+			image: sql,
+			title: "Administration SQL Server ",
+			subTitle: " generating DataBase ",
+		},
+		{ image: iot, title: "IOT", subTitle: "Internet of things" },
+		{
+			image: sid,
+			title: "Système interactif d'aide à la décision",
+			subTitle:
+				"Mémoire d’ingénieur de conception en génie informatique Zafack Takadong Thibaut ENSP",
+		},
+		{
+			image: server,
+			title: "Programmation web avancée côté Serveur",
+			subTitle: "PHP, PDO, MVC, DAL, Controller de categorie PHP. ",
+		},
+		{
+			image: client,
+			title: "Programmation web avancée côté client ",
+			subTitle: "HTML, PHP, ASP, JAVASCRIPT, AJAX",
+		},
 	]);
 	useEffect(() => {}, []);
 	// @ts-ignore
