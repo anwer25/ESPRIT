@@ -1,5 +1,5 @@
 import React from "react";
-// eslint-disable-next-line import/extensions
+
 import {
 	CoursesTitleContainer,
 	ExploreItemContainer,
@@ -13,7 +13,6 @@ import StudentReview from "./review/index.";
 import Emailinscription from "./email";
 import Article from "./article";
 import Partner from "./partner";
-import { constants } from "zlib";
 import Industriel from "./industriel";
 import Technologic from "./technologique";
 
