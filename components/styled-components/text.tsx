@@ -40,6 +40,12 @@ const StyledLink = styled.a`
 	text-decoration: none;
 	color: black;
 	cursor: pointer;
+	& sapn > span > img {
+		min-height: 12rem;
+		min-width: 12rem;
+		max-width: 13rem;
+		max-height: 13rem;
+	}
 `;
 
 const CoursesCardTitle = styled.h3`

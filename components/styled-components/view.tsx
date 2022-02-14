@@ -373,6 +373,7 @@ const ArticleContainer = styled.div`
 const ArticleItemContainer = styled.div`
 	display: flex;
 	flex-flow: column;
+	align-items: center;
 `;
 const ArticleImageContainer = styled.div`
 	& span > span > img {
@@ -397,7 +398,7 @@ const PartnersSection = styled.section`
 const PartnersGlobalContainer = styled.div`
 	margin: 0 auto;
 	overflow: hidden;
-	max-width: 500px;
+	max-width: 700px;
 `;
 const PartnersSlideContainer = styled.div`
 	white-space: nowrap;
@@ -409,7 +410,7 @@ const PartnersSideImageContainers = styled.div`
 	align-items: center;
 	width: 100%;
 	& > span > span > img {
-		max-height: 15rem;
+		height: 15rem;
 	}
 `;
 const PartnersSlideImage = styled(Image)``;

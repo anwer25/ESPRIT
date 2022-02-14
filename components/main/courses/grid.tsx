@@ -17,7 +17,7 @@ const GridItems: React.FC = (): JSX.Element => {
 	// eslint-disable-next-line no-unused-vars
 	const [data, setData] = useState([
 		{
-			architect,
+			image: architect,
 			title: "Architecture logicielle et conception avancée",
 			subTitle: "Développer un modéle Architectural",
 		},
