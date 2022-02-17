@@ -31,6 +31,7 @@ const Main: React.FC = (): JSX.Element => (
 					fontWeight: "bold",
 					margin: "1rem",
 					textAlign: "center",
+					color: "#837E7C",
 				}}
 			>
 				Academique <Partner />
@@ -41,6 +42,7 @@ const Main: React.FC = (): JSX.Element => (
 					fontWeight: "bold",
 					margin: "1rem",
 					textAlign: "center",
+					color: "#837E7C",
 				}}
 			>
 				Industriels
@@ -52,6 +54,7 @@ const Main: React.FC = (): JSX.Element => (
 					fontWeight: "bold",
 					margin: "1rem",
 					textAlign: "center",
+					color: "#837E7C",
 				}}
 			>
 				Technologique
