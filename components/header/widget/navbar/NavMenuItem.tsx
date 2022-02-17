@@ -19,7 +19,7 @@ const MenuItem = ({ i }) => {
 			whileTap={{ scale: 0.95 }}
 		>
 			<NavIcon style={style} />
-			<NavLink style={style} />
+			<NavLink style={style}> Stuff Administratif </NavLink>
 		</NavLi>
 	);
 };

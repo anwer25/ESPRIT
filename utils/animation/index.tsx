@@ -22,6 +22,7 @@ const sidebar = {
 };
 
 const Path = (
+	// eslint-disable-next-line no-undef
 	props: JSX.IntrinsicAttributes &
 		SVGMotionProps<SVGPathElement> &
 		RefAttributes<SVGPathElement>
@@ -31,6 +32,7 @@ const Path = (
 		strokeWidth="3"
 		stroke="hsl(0, 0%, 18%)"
 		strokeLinecap="round"
+		// eslint-disable-next-line react/jsx-props-no-spreading
 		{...props}
 	/>
 );

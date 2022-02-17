@@ -5,10 +5,9 @@ import {
 	PartnersSection,
 } from "../../styled-components/view";
 import PartnerSlide from "../widget/partner";
-import p1 from "../../../public/information/partenaire/academique/2ieSite_logo-4747.png";
+import p1 from "../../../public/information/partenaire/academique/p1.png";
 import p2 from "../../../public/information/partenaire/academique/p2.jpg";
 import p3 from "../../../public/information/partenaire/academique/p3.png";
-import p4 from "../../../public/information/partenaire/academique/p4.jpg";
 import p5 from "../../../public/information/partenaire/academique/p5.png";
 import p6 from "../../../public/information/partenaire/academique/p6.jpg";
 import p7 from "../../../public/information/partenaire/academique/p7.png";
@@ -34,6 +33,7 @@ import p26 from "../../../public/information/partenaire/academique/p26.jpg";
 import p27 from "../../../public/information/partenaire/academique/p27.jpg";
 import p28 from "../../../public/information/partenaire/academique/p28.jpeg";
 
+// eslint-disable-next-line no-undef
 const Partner: React.FC = (): JSX.Element => {
 	const [data, setData] = useState<Array<object>>([]);
 	useEffect(() => {
@@ -42,7 +42,6 @@ const Partner: React.FC = (): JSX.Element => {
 			{ image: p1, title: "p1" },
 			{ image: p2, title: "p2" },
 			{ image: p3, title: "p3" },
-			{ image: p4, title: "p4" },
 			{ image: p5, title: "p5" },
 			{ image: p6, title: "p6" },
 			{ image: p7, title: "p7" },

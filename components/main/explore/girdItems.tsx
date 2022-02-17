@@ -15,14 +15,17 @@ const GirdItems: React.FC = (): JSX.Element => {
 	useEffect(() => {
 		console.log("hello");
 		setData([
-			{ image: frame32, title: "Business & Management" },
-			{ image: frame34, title: "Language" },
-			{ image: frame35, title: "Infotmation Technology" },
-			{ image: frame37, title: "Film & media" },
-			{ image: frame38, title: "Math & Logic" },
-			{ image: frame36, title: "Helth & Medical" },
-			{ image: frame11, title: "Design & Creative" },
-			{ image: carbon, title: "data Science" },
+			{ image: frame32, title: "Design & Creative" },
+			{ image: frame34, title: "Information Technology" },
+			{
+				image: frame35,
+				title: "Health & Medical",
+			},
+			{ image: frame37, title: "data Science" },
+			{ image: frame38, title: "Math & Logic " },
+			{ image: frame36, title: "Language" },
+			{ image: frame11, title: "Film & media" },
+			{ image: carbon, title: " Business & Management" },
 		]);
 	}, []);
 

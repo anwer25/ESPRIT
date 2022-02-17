@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 // eslint-disable-next-line import/extensions
-import { CoursesGridItemsContainer } from "../styled-components/view";
+import { CoursesGridItemsContainer } from "../../components/styled-components/view";
 // eslint-disable-next-line import/extensions
 import p1 from "../../public/information/partenaire/industriels/p1.png";
 import p2 from "../../public/information/partenaire/industriels/p2.png";

@@ -33,7 +33,7 @@ const Email: React.FC = (): JSX.Element => {
 				<EmailSectionGlobalContainer>
 					<EmailImageContainer>
 						<EmailImage
-							src="/./design.svg"
+							src="/./email2.png"
 							width="300px"
 							height="300px"
 							alt="herro"
