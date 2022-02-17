@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 // eslint-disable-next-line import/extensions
-import { CoursesGridItemsContainer } from "../../styled-components/view";
+import {CoursesGridItemsContainer} from "../../styled-components/view";
 // eslint-disable-next-line import/extensions
 import GridItem from "../widget/courses/gride";
 import architect from "../../../public/architect.jpg";
@@ -41,8 +41,7 @@ const GridItems: React.FC = (): JSX.Element => {
 		{
 			image: sid,
 			title: "Système interactif d'aide à la décision",
-			subTitle:
-				"Mémoire d’ingénieur de conception en génie informatique Zafack Takadong Thibaut ENSP",
+			subTitle: "Mémoire d’ingénieur de conception en génie informatique",
 		},
 		{
 			image: server,

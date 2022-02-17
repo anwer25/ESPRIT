@@ -19,7 +19,7 @@ import {
 const Social: React.FC = (): JSX.Element => (
 	<SocialMediaContainer>
 		<InstaContainer>
-			<Link href={links.instagrame}>
+			<Link href={links.instagrame} passHref>
 				<a href="" style={{ display: "block" }}>
 					<InstaSVG
 						width="30"
@@ -34,8 +34,8 @@ const Social: React.FC = (): JSX.Element => (
 			</Link>
 		</InstaContainer>
 		<FacebookContainer>
-			<Link href={links.facebook}>
-				<a href="" style={{ display: "block" }}>
+			<Link href={links.facebook} passHref>
+				<a style={{ display: "block" }}>
 					<FacebookSVG
 						width="30"
 						height="30"
@@ -49,7 +49,7 @@ const Social: React.FC = (): JSX.Element => (
 			</Link>
 		</FacebookContainer>
 		<TwitterContainer>
-			<Link href={links.twitter}>
+			<Link href={links.twitter} passHref>
 				<a href="" style={{ display: "block" }}>
 					<TwitterSVG
 						width="30"
