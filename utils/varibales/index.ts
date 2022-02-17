@@ -51,7 +51,8 @@ const [
 	defaultNavContainerColor,
 	defaultExploreContainerColor,
 	defaultFooterInfoBgColor,
-] = Array(3).fill("#696969");
+	defaultArticleBgColor,
+] = Array(4).fill("#696969");
 
 const [
 	defaultCircleBorderColor,
@@ -73,7 +74,7 @@ const [
 	defaultCoursesCardSubTitlelColor,
 	defaultEmailFormTitleTextColor,
 	defaultEmailFormLogo,
-] = Array(9).fill(colorsName.blueBg.hex);
+] = Array(9).fill(colorsName.BlackW3C.hex);
 
 const [defaultSecondCircleGradientColor] = Array(1).fill(colorsName.WhiteG.hex);
 
@@ -89,8 +90,7 @@ const [defaultSecondCircleBgColor] = Array(1).fill(colorsName.WhiteG.hex);
 const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
 const [defaultStudentReviewTitleColor] = Array(1).fill("#2357BF");
-const [defaultExploreItemContainerColor, defaultArticleBgColor] =
-	Array(2).fill(" #3a3b3c ");
+const [defaultExploreItemContainerColor] = Array(1).fill(" #3a3b3c ");
 const defaultTheme = {
 	articleBgColor: defaultArticleBgColor,
 	navContainerColor: defaultNavContainerColor,
