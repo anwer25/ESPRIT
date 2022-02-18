@@ -13,7 +13,7 @@ const MarginContainer = styled.div`
 	margin: 0 11.57rem;
 `;
 /* ---------------------------------------------Global Container END------------------------------------------------ */
-
+const Br = styled.br``;
 /* ---------------------------------------------Header Start------------------------------------------------ */
 const HeaderContainer = styled.header`
 	height: 25rem;
@@ -122,7 +122,7 @@ const NavLink = styled.div`
 `;
 const CircleContainer = styled.div`
 	position: relative;
-	top: -23.875rem;
+	top: -26.875rem;
 	right: -5rem;
 	display: inline-block;
 `;
@@ -169,6 +169,8 @@ const SocialMediaContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	position: relative;
+	right: -0.8rem;
 `;
 const InstaContainer = styled.div`
 	margin-right: 1rem;
@@ -199,9 +201,9 @@ const HeroContainer = styled.div`
 	justify-content: center;
 	flex-flow: column nowrap;
 	position: relative;
-	width: 45rem;
-	height: 24rem;
-	top: 7.625rem;
+	width: 58rem;
+	height: 30rem;
+	top: 3rem;
 	left: 10.25rem;
 	overflow: hidden;
 `;
@@ -217,8 +219,8 @@ const HeroSlideImageContainers = styled.div`
 	align-items: center;
 	width: 100%;
 	& > span > span > img {
-		max-height: 22rem;
-		max-width: 45rem;
+		max-height: 30rem;
+		max-width: 53rem;
 	}
 `;
 
@@ -536,6 +538,7 @@ export {
 	FooterContainer,
 	MarginContainer,
 	Nav,
+	Br,
 	LogoBar,
 	SearchContainer,
 	SearchInput,

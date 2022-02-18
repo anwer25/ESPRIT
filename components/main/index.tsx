@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import {
+	Br,
 	CoursesTitleContainer,
 	MainContainer,
 } from "../styled-components/view";
@@ -18,10 +19,20 @@ import Technologic from "./technologique";
 const Main: React.FC = (): JSX.Element => (
 	<MainContainer>
 		<Courses />
+		<Br />
 		<Explore />
 		{/* <StudentReview /> */}
-		<h1 style={{ color: "red", textAlign: "center" }}> Partenaire </h1>
-
+		<h1
+			style={{
+				color: "black",
+				textAlign: "center",
+				fontFamily: "Arial",
+				fontWeight: "bold",
+			}}
+		>
+			{" "}
+			PARTENAIRE ESPRIT{" "}
+		</h1>
 		<CoursesTitleContainer>
 			<Link href="/partners/acdemique" passHref>
 				<a
@@ -31,7 +42,7 @@ const Main: React.FC = (): JSX.Element => (
 						margin: "1rem",
 						textAlign: "center",
 						textDecoration: "none",
-						color: "#000",
+						color: "gray",
 					}}
 				>
 					Academique <Partner />
@@ -45,7 +56,7 @@ const Main: React.FC = (): JSX.Element => (
 						margin: "1rem",
 						textAlign: "center",
 						textDecoration: "none",
-						color: "#000",
+						color: "Gray",
 					}}
 				>
 					Industriels
@@ -60,7 +71,7 @@ const Main: React.FC = (): JSX.Element => (
 						margin: "1rem",
 						textAlign: "center",
 						textDecoration: "none",
-						color: "#000",
+						color: "gray",
 					}}
 				>
 					Technologique
