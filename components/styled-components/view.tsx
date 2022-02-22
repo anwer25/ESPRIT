@@ -530,6 +530,29 @@ const FooterCopyRightTextContainer = styled.div`
 	text-align: center;
 `;
 /* ---------------------------------------------footer end------------------------------------------------ */
+/* ---------------------------------------------partners pages start------------------------------------------------ */
+const PartnersItemContainer = styled.div`
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	margin-top: 14rem;
+`;
+
+const PartnersItem = styled.div`
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+`;
+
+const PartnersImage = styled.div`
+	& span > span > img {
+		height: 240px;
+		width: 240px;
+	}
+`;
+const PartnersTitle = styled.div``;
+/* ---------------------------------------------partners pages end------------------------------------------------ */
 /* ---------------------------------------------Style end------------------------------------------------ */
 export {
 	Container,
@@ -625,4 +648,8 @@ export {
 	FooterLinkGeneratorTitle,
 	FooterGeneratorLinkConntainer,
 	FooterCopyRightTextContainer,
+	PartnersItemContainer,
+	PartnersItem,
+	PartnersImage,
+	PartnersTitle,
 };
